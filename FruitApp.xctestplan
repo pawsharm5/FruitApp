@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "F92AAA90-CDF4-4716-9867-50BF62ADB110",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:FruitApp.xcodeproj",
+        "identifier" : "F24C1B002A85EBEC00EC512A",
+        "name" : "FruitAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:FruitApp.xcodeproj",
+        "identifier" : "F24C1B0A2A85EBEC00EC512A",
+        "name" : "FruitAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

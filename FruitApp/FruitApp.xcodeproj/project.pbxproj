@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22352BE76C2AF8DB2F5FE2F2 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0182815AF7392031A1046F38 /* Pods_FruitApp.framework */; };
+		7D1150261C1712E38D0A278A /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */; };
+		C75F492DC8192DB03E58C3FD /* Pods_FruitAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1EA50D07AF046CCB60EA5E /* Pods_FruitAppUITests.framework */; };
+		F24C1AEF2A85EBEA00EC512A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */; };
+		F24C1AF62A85EBEA00EC512A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24C1AF42A85EBEA00EC512A /* Main.storyboard */; };
+		F24C1AF82A85EBEB00EC512A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24C1AF72A85EBEB00EC512A /* Assets.xcassets */; };
+		F24C1AFB2A85EBEB00EC512A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24C1AF92A85EBEB00EC512A /* LaunchScreen.storyboard */; };
+		F24C1B062A85EBEC00EC512A /* FruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B052A85EBEC00EC512A /* FruitAppTests.swift */; };
+		F24C1B102A85EBEC00EC512A /* FruitAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B0F2A85EBEC00EC512A /* FruitAppUITests.swift */; };
+		F24C1B122A85EBEC00EC512A /* FruitAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B112A85EBEC00EC512A /* FruitAppUITestsLaunchTests.swift */; };
+		F24C1B242A85ECA600EC512A /* FruitListTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B222A85ECA600EC512A /* FruitListTblCell.swift */; };
+		F24C1B252A85ECA600EC512A /* FruitListTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24C1B232A85ECA600EC512A /* FruitListTblCell.xib */; };
+		F24C1B2A2A85ECFA00EC512A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B292A85ECFA00EC512A /* HomeViewController.swift */; };
+		F24C1B2C2A85ED0900EC512A /* FruitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */; };
+		F24C1B2E2A85ED2300EC512A /* FruitsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */; };
+		F24C1B302A85F88D00EC512A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */; };
+		F24C1B322A85F8BA00EC512A /* APIRouterStructer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */; };
+		F24C1B342A85F8FC00EC512A /* ConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */; };
+		F24C1B362A85F91200EC512A /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B352A85F91200EC512A /* SessionHelper.swift */; };
+		F2D72EA72A8C9ECE00E50996 /* HomeViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72EA62A8C9ECE00E50996 /* HomeViewControllerTest.swift */; };
+		F2D72EA92A8C9FBD00E50996 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72EA82A8C9FBD00E50996 /* APITests.swift */; };
+		F2FFF5862A89E4B500676DCB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */; };
+		F2FFF5892A89E53500676DCB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF5882A89E53500676DCB /* Observable.swift */; };
+		F2FFF58B2A89EC2100676DCB /* FruitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */; };
+		F2FFF58D2A89F47B00676DCB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF58C2A89F47B00676DCB /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F24C1B022A85EBEC00EC512A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F24C1AE32A85EBEA00EC512A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F24C1AEA2A85EBEA00EC512A;
+			remoteInfo = FruitApp;
+		};
+		F24C1B0C2A85EBEC00EC512A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F24C1AE32A85EBEA00EC512A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F24C1AEA2A85EBEA00EC512A;
+			remoteInfo = FruitApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0182815AF7392031A1046F38 /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1A43E4C45E162053759B7833 /* Pods-FruitApp-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp-FruitAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D1EA50D07AF046CCB60EA5E /* Pods_FruitAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5791A234C453060ABC67AABE /* Pods-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
+		8F1D287882EE12C4D8A5A084 /* Pods-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF2F1D3CA601A37B99166EC /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp-FruitAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F24C1AEB2A85EBEA00EC512A /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F24C1AF52A85EBEA00EC512A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F24C1AF72A85EBEB00EC512A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F24C1AFA2A85EBEB00EC512A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F24C1AFC2A85EBEB00EC512A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F24C1B012A85EBEC00EC512A /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24C1B052A85EBEC00EC512A /* FruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppTests.swift; sourceTree = "<group>"; };
+		F24C1B0B2A85EBEC00EC512A /* FruitAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24C1B0F2A85EBEC00EC512A /* FruitAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppUITests.swift; sourceTree = "<group>"; };
+		F24C1B112A85EBEC00EC512A /* FruitAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F24C1B222A85ECA600EC512A /* FruitListTblCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListTblCell.swift; sourceTree = "<group>"; };
+		F24C1B232A85ECA600EC512A /* FruitListTblCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitListTblCell.xib; sourceTree = "<group>"; };
+		F24C1B292A85ECFA00EC512A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsViewController.swift; sourceTree = "<group>"; };
+		F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListModel.swift; sourceTree = "<group>"; };
+		F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouterStructer.swift; sourceTree = "<group>"; };
+		F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
+		F24C1B352A85F91200EC512A /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
+		F2D72EA62A8C9ECE00E50996 /* HomeViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTest.swift; sourceTree = "<group>"; };
+		F2D72EA82A8C9FBD00E50996 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F2FFF5882A89E53500676DCB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewModel.swift; sourceTree = "<group>"; };
+		F2FFF58C2A89F47B00676DCB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F24C1AE82A85EBEA00EC512A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22352BE76C2AF8DB2F5FE2F2 /* Pods_FruitApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1AFE2A85EBEC00EC512A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D1150261C1712E38D0A278A /* Pods_FruitAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1B082A85EBEC00EC512A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75F492DC8192DB03E58C3FD /* Pods_FruitAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C901FA221695E8A2C6632EEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */,
+				633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */,
+				ECF2F1D3CA601A37B99166EC /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */,
+				1A43E4C45E162053759B7833 /* Pods-FruitApp-FruitAppUITests.release.xcconfig */,
+				E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */,
+				241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */,
+				5791A234C453060ABC67AABE /* Pods-FruitAppUITests.debug.xcconfig */,
+				8F1D287882EE12C4D8A5A084 /* Pods-FruitAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE716C1853D0C3B49B366E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0182815AF7392031A1046F38 /* Pods_FruitApp.framework */,
+				D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */,
+				1D1EA50D07AF046CCB60EA5E /* Pods_FruitAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F24C1AE22A85EBEA00EC512A = {
+			isa = PBXGroup;
+			children = (
+				F24C1AED2A85EBEA00EC512A /* FruitApp */,
+				F24C1B042A85EBEC00EC512A /* FruitAppTests */,
+				F24C1B0E2A85EBEC00EC512A /* FruitAppUITests */,
+				F24C1AEC2A85EBEA00EC512A /* Products */,
+				C901FA221695E8A2C6632EEE /* Pods */,
+				CE716C1853D0C3B49B366E27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F24C1AEC2A85EBEA00EC512A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1AEB2A85EBEA00EC512A /* FruitApp.app */,
+				F24C1B012A85EBEC00EC512A /* FruitAppTests.xctest */,
+				F24C1B0B2A85EBEC00EC512A /* FruitAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F24C1AED2A85EBEA00EC512A /* FruitApp */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */,
+				F2FFF5872A89E51F00676DCB /* Utility */,
+				F24C1B282A85ECCB00EC512A /* ApiManager */,
+				F24C1B272A85ECC000EC512A /* ViewModels */,
+				F24C1B262A85ECBB00EC512A /* Models */,
+				F24C1B212A85EC2700EC512A /* CustomView */,
+				F24C1B1E2A85EBF600EC512A /* Controllers */,
+				F24C1AF42A85EBEA00EC512A /* Main.storyboard */,
+				F24C1AF72A85EBEB00EC512A /* Assets.xcassets */,
+				F24C1AF92A85EBEB00EC512A /* LaunchScreen.storyboard */,
+				F24C1AFC2A85EBEB00EC512A /* Info.plist */,
+			);
+			path = FruitApp;
+			sourceTree = "<group>";
+		};
+		F24C1B042A85EBEC00EC512A /* FruitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B052A85EBEC00EC512A /* FruitAppTests.swift */,
+				F2D72EA82A8C9FBD00E50996 /* APITests.swift */,
+			);
+			path = FruitAppTests;
+			sourceTree = "<group>";
+		};
+		F24C1B0E2A85EBEC00EC512A /* FruitAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B0F2A85EBEC00EC512A /* FruitAppUITests.swift */,
+				F2D72EA62A8C9ECE00E50996 /* HomeViewControllerTest.swift */,
+				F24C1B112A85EBEC00EC512A /* FruitAppUITestsLaunchTests.swift */,
+			);
+			path = FruitAppUITests;
+			sourceTree = "<group>";
+		};
+		F24C1B1E2A85EBF600EC512A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B202A85EC1900EC512A /* Detail */,
+				F24C1B1F2A85EC1100EC512A /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F24C1B1F2A85EC1100EC512A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B292A85ECFA00EC512A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F24C1B202A85EC1900EC512A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F24C1B212A85EC2700EC512A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B222A85ECA600EC512A /* FruitListTblCell.swift */,
+				F24C1B232A85ECA600EC512A /* FruitListTblCell.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F24C1B262A85ECBB00EC512A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F24C1B272A85ECC000EC512A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */,
+				F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F24C1B282A85ECCB00EC512A /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */,
+				F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */,
+				F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */,
+				F24C1B352A85F91200EC512A /* SessionHelper.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		F2FFF5872A89E51F00676DCB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F2FFF5882A89E53500676DCB /* Observable.swift */,
+				F2FFF58C2A89F47B00676DCB /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F24C1AEA2A85EBEA00EC512A /* FruitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24C1B152A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitApp" */;
+			buildPhases = (
+				088E9D97AFA740C9E7634594 /* [CP] Check Pods Manifest.lock */,
+				F24C1AE72A85EBEA00EC512A /* Sources */,
+				F24C1AE82A85EBEA00EC512A /* Frameworks */,
+				F24C1AE92A85EBEA00EC512A /* Resources */,
+				9410B3CFF2124BE685696FF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FruitApp;
+			productName = FruitApp;
+			productReference = F24C1AEB2A85EBEA00EC512A /* FruitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F24C1B002A85EBEC00EC512A /* FruitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24C1B182A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppTests" */;
+			buildPhases = (
+				522B8E2D7A77DF983AB03F7F /* [CP] Check Pods Manifest.lock */,
+				F24C1AFD2A85EBEC00EC512A /* Sources */,
+				F24C1AFE2A85EBEC00EC512A /* Frameworks */,
+				F24C1AFF2A85EBEC00EC512A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24C1B032A85EBEC00EC512A /* PBXTargetDependency */,
+			);
+			name = FruitAppTests;
+			productName = FruitAppTests;
+			productReference = F24C1B012A85EBEC00EC512A /* FruitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F24C1B0A2A85EBEC00EC512A /* FruitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F24C1B1B2A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppUITests" */;
+			buildPhases = (
+				76C757C7221BF086BF36FE6F /* [CP] Check Pods Manifest.lock */,
+				F24C1B072A85EBEC00EC512A /* Sources */,
+				F24C1B082A85EBEC00EC512A /* Frameworks */,
+				F24C1B092A85EBEC00EC512A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F24C1B0D2A85EBEC00EC512A /* PBXTargetDependency */,
+			);
+			name = FruitAppUITests;
+			productName = FruitAppUITests;
+			productReference = F24C1B0B2A85EBEC00EC512A /* FruitAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F24C1AE32A85EBEA00EC512A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F24C1AEA2A85EBEA00EC512A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F24C1B002A85EBEC00EC512A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F24C1AEA2A85EBEA00EC512A;
+					};
+					F24C1B0A2A85EBEC00EC512A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F24C1AEA2A85EBEA00EC512A;
+					};
+				};
+			};
+			buildConfigurationList = F24C1AE62A85EBEA00EC512A /* Build configuration list for PBXProject "FruitApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F24C1AE22A85EBEA00EC512A;
+			productRefGroup = F24C1AEC2A85EBEA00EC512A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F24C1AEA2A85EBEA00EC512A /* FruitApp */,
+				F24C1B002A85EBEC00EC512A /* FruitAppTests */,
+				F24C1B0A2A85EBEC00EC512A /* FruitAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F24C1AE92A85EBEA00EC512A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24C1AFB2A85EBEB00EC512A /* LaunchScreen.storyboard in Resources */,
+				F24C1B252A85ECA600EC512A /* FruitListTblCell.xib in Resources */,
+				F24C1AF82A85EBEB00EC512A /* Assets.xcassets in Resources */,
+				F24C1AF62A85EBEA00EC512A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1AFF2A85EBEC00EC512A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1B092A85EBEC00EC512A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088E9D97AFA740C9E7634594 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		522B8E2D7A77DF983AB03F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C757C7221BF086BF36FE6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FruitAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9410B3CFF2124BE685696FF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F24C1AE72A85EBEA00EC512A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24C1B2E2A85ED2300EC512A /* FruitsListModel.swift in Sources */,
+				F2FFF5862A89E4B500676DCB /* HomeViewModel.swift in Sources */,
+				F24C1B322A85F8BA00EC512A /* APIRouterStructer.swift in Sources */,
+				F24C1B242A85ECA600EC512A /* FruitListTblCell.swift in Sources */,
+				F2FFF5892A89E53500676DCB /* Observable.swift in Sources */,
+				F24C1AEF2A85EBEA00EC512A /* AppDelegate.swift in Sources */,
+				F24C1B2C2A85ED0900EC512A /* FruitDetailsViewController.swift in Sources */,
+				F24C1B362A85F91200EC512A /* SessionHelper.swift in Sources */,
+				F24C1B2A2A85ECFA00EC512A /* HomeViewController.swift in Sources */,
+				F24C1B302A85F88D00EC512A /* ApiRouter.swift in Sources */,
+				F2FFF58B2A89EC2100676DCB /* FruitDetailViewModel.swift in Sources */,
+				F24C1B342A85F8FC00EC512A /* ConnectionSettings.swift in Sources */,
+				F2FFF58D2A89F47B00676DCB /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1AFD2A85EBEC00EC512A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D72EA92A8C9FBD00E50996 /* APITests.swift in Sources */,
+				F24C1B062A85EBEC00EC512A /* FruitAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F24C1B072A85EBEC00EC512A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24C1B122A85EBEC00EC512A /* FruitAppUITestsLaunchTests.swift in Sources */,
+				F2D72EA72A8C9ECE00E50996 /* HomeViewControllerTest.swift in Sources */,
+				F24C1B102A85EBEC00EC512A /* FruitAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F24C1B032A85EBEC00EC512A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F24C1AEA2A85EBEA00EC512A /* FruitApp */;
+			targetProxy = F24C1B022A85EBEC00EC512A /* PBXContainerItemProxy */;
+		};
+		F24C1B0D2A85EBEC00EC512A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F24C1AEA2A85EBEA00EC512A /* FruitApp */;
+			targetProxy = F24C1B0C2A85EBEC00EC512A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F24C1AF42A85EBEA00EC512A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F24C1AF52A85EBEA00EC512A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F24C1AF92A85EBEB00EC512A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F24C1AFA2A85EBEB00EC512A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F24C1B132A85EBEC00EC512A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F24C1B142A85EBEC00EC512A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F24C1B162A85EBEC00EC512A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"PromiseKit\"",
+					"-framework",
+					"\"UIKit\"",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F24C1B172A85EBEC00EC512A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FruitApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F24C1B192A85EBEC00EC512A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FruitApp";
+			};
+			name = Debug;
+		};
+		F24C1B1A2A85EBEC00EC512A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FruitApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FruitApp";
+			};
+			name = Release;
+		};
+		F24C1B1C2A85EBEC00EC512A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5791A234C453060ABC67AABE /* Pods-FruitAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitApp;
+			};
+			name = Debug;
+		};
+		F24C1B1D2A85EBEC00EC512A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1D287882EE12C4D8A5A084 /* Pods-FruitAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fruit.FruitAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FruitApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F24C1AE62A85EBEA00EC512A /* Build configuration list for PBXProject "FruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C1B132A85EBEC00EC512A /* Debug */,
+				F24C1B142A85EBEC00EC512A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24C1B152A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C1B162A85EBEC00EC512A /* Debug */,
+				F24C1B172A85EBEC00EC512A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24C1B182A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C1B192A85EBEC00EC512A /* Debug */,
+				F24C1B1A2A85EBEC00EC512A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F24C1B1B2A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F24C1B1C2A85EBEC00EC512A /* Debug */,
+				F24C1B1D2A85EBEC00EC512A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F24C1AE32A85EBEA00EC512A /* Project object */;
+}
