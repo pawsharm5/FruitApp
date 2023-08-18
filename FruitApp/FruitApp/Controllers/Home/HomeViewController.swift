@@ -12,6 +12,12 @@ import Alamofire
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var btnAllFruits: UIButton!
+    @IBOutlet weak var btnFruitByFamily: UIButton!
+    @IBOutlet weak var btnFruitByGenus: UIButton!
+    @IBOutlet weak var btnFruitByOrder: UIButton!
+
+    
     var viewModel = HomeViewModel()
     var resonseAvailabel = false
     override func viewDidLoad() {

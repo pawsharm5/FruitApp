@@ -106,6 +106,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome to Fruits App" id="UqQ-nV-K9O"/>
                     <connections>
+                        <outlet property="btnAllFruits" destination="wxI-Kl-WG5" id="ncJ-wY-Zyz"/>
+                        <outlet property="btnFruitByFamily" destination="Upt-iR-ehn" id="aDn-Gz-Tmu"/>
+                        <outlet property="btnFruitByGenus" destination="R6B-bX-rgF" id="qDv-75-vG2"/>
+                        <outlet property="btnFruitByOrder" destination="FjE-6X-2Yw" id="S25-e7-Jem"/>
                         <outlet property="searchBar" destination="MPa-l7-oIp" id="viY-if-Gye"/>
                         <outlet property="tableView" destination="Ioh-DJ-tuP" id="zLr-08-YKr"/>
                         <segue destination="Aok-fE-QEt" kind="push" id="8H8-9J-lRp"/>

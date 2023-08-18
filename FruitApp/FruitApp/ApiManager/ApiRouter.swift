@@ -11,7 +11,6 @@ enum APIRouter {
     
     // MARK: - Endpoints
     case getAllFruit
-    case addNewFruit
     
     var baseURL: String {
         return AppEnvironement.baseURL.absoluteString
@@ -20,7 +19,6 @@ enum APIRouter {
     var method: HTTPMethod {
         switch self {
         case .getAllFruit: return .get
-        case .addNewFruit: return .put
         }
     }
     
@@ -28,8 +26,6 @@ enum APIRouter {
         switch self {
         case .getAllFruit:
             return "fruit/all"
-        case .addNewFruit:
-            return "posts"
         }
     }
     
@@ -41,25 +37,24 @@ enum APIRouter {
     
     var paramters: Parameters? {
         switch self {
-        case .getAllFruit, .addNewFruit: return nil
+        case .getAllFruit: return nil
         }
     }
     
     var body: Parameters? {
         switch self {
         case .getAllFruit: return nil
-        case .addNewFruit:
-            return nil
         }
     }
     
+    /* future use if any
     var additionalHeaders: HTTPHeaders? {
         switch self {
         case .getAllFruit: return nil
         case .addNewFruit: return nil
         }
     }
-    
+    */
     var timeout: TimeInterval {
         switch self {
         default: return 20

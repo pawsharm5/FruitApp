@@ -30,7 +30,6 @@ class HomeViewModel: ObservableObject {
     
     var selectdCategory = Category.AllFruits
     var soretedKeys = [String]()
-    var mmm = [Any]()
     
     func getAllFruits() {
         let apiRouterStructure = APIRouterStructer(apiRouter: .getAllFruit)

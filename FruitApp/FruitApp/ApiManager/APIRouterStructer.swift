@@ -16,12 +16,13 @@ struct APIRouterStructer: URLRequestConvertible {
         var headersDictionary = [
             "Accept": "application/json"
         ]
+        /* for future use if any other requirements
         if let additionalHeaders = apiRouter.additionalHeaders {
             let additionalHeadersDictionary = additionalHeaders.dictionary
             additionalHeadersDictionary.forEach { (key, value) in
                 headersDictionary[key] = value
             }
-        }
+        }*/
         return HTTPHeaders(headersDictionary)
     }
     
@@ -31,8 +32,9 @@ struct APIRouterStructer: URLRequestConvertible {
         urlRequest.httpMethod = apiRouter.method.rawValue
         urlRequest.timeoutInterval = apiRouter.timeout
         urlRequest.headers = headers()
-        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        /* For Post Api. Right now we are supporting get apis only
         if let body = apiRouter.body {
             do {
                 let data = try JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
@@ -43,8 +45,8 @@ struct APIRouterStructer: URLRequestConvertible {
         }
         if let parameters = apiRouter.paramters {
             urlRequest = try apiRouter.encoding.encode(urlRequest, with: parameters)
-        }
-        print("urlRequest: \(urlRequest)")
+        }*/
+        //print("urlRequest: \(urlRequest)")
         return urlRequest
     }
 }

@@ -4,31 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme_^#shared#^_</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FruitApp.xcscheme_^#shared#^_</key>
+		<key>Pods-FruitApp-FruitAppUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FruitAppTests.xcscheme_^#shared#^_</key>
+		<key>Pods-FruitApp.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FruitAppUITests.xcscheme_^#shared#^_</key>
+		<key>Pods-FruitAppTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>PromiseKit.xcscheme_^#shared#^_</key>
+		<key>PromiseKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

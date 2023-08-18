@@ -29,13 +29,15 @@ class APITests: XCTestCase {
         case FruitsByOrder
     }
     
-       var mokeFruitArray = [FruitsListModelElement(name: "Banana",id: 1,family:"Musaceae",order: "Zingiberales",genus: "Musa",nutritions: Nutritions(calories: 96,fat: 0.2,sugar: 17.2,carbohydrates: 22.0,protein: 1.0))]
+    var mokeFruitArray = [FruitsListModelElement(name: "Banana",id: 1,family:"Musaceae",order: "Zingiberales",genus: "Musa",nutritions: Nutritions(calories: 96,fat: 0.2,sugar: 17.2,carbohydrates: 22.0,protein: 1.0))]
+    
     let object = """
 {"name":"Banana","id":1,"family":"Musaceae","order":"Zingiberales","genus":"Musa","nutritions":{"calories":96.0,"fat":0.2,"sugar":17.2,"carbohydrates":22.0,"protein":1}}
 """.data(using: .utf8)
-            
+    
     override func setUp() {
         super.setUp()
+        continueAfterFailure = true
         apiCall = APIRouterStructer(apiRouter: .getAllFruit)
     }
     
@@ -44,7 +46,7 @@ class APITests: XCTestCase {
         super.tearDown() //its get call all time whenever any case we check
     }
     
-    func test_Fail_To_Parse_Response() {
+    func testFailToParseResponse() {
         let sut = self.apiCall
         XCTAssertEqual(sut?.urlRequest?.url?.absoluteString ?? "", "https://www.fruityvice.com/api/fruit/all") //Check URL is correct
         // When fetch popular photo
@@ -62,22 +64,18 @@ class APITests: XCTestCase {
             return Promise<FruitsListModel>.value(try JSONDecoder().decode(FruitsListModel.self, from: object!)) //this is fail case
         }.catch { [weak self] error in
             guard let self = self else { return }
-            print("Error-->",error.localizedDescription)
-            XCTFail(error.localizedDescription)
+            XCTAssertEqual(error.localizedDescription, "The data couldn’t be read because it isn’t in the correct format.")
         }
             .finally {
-                self.test_By_category(type: .AllFruits)
-                sleep(2)
-                self.test_By_category(type: .FruitsByFamily)
-                sleep(2)
-                self.test_By_category(type: .FruitsByGenus)
-                sleep(2)
-                self.test_By_category(type: .FruitsByOrder)
-                sleep(2)
-                print(self.filteredResponse1?.count)
-                print(self.filteredResponse2?.count)
-                print(self.filteredResponse3?.count)
-                print(self.filteredResponse4?.count)
+                self.testByCategory(type: .AllFruits)
+                self.testByCategory(type: .FruitsByFamily)
+                self.testByCategory(type: .FruitsByGenus)
+                self.testByCategory(type: .FruitsByOrder)
+                
+                XCTAssertNotNil(self.filteredResponse1)
+                XCTAssertNotNil(self.filteredResponse2)
+                XCTAssertNotNil(self.filteredResponse3)
+                XCTAssertNotNil(self.filteredResponse4)
 
                 expect.fulfill()
             }
@@ -85,7 +83,7 @@ class APITests: XCTestCase {
         wait(for: [expect], timeout: 10.0) //Timeout
     }
     
-    func test_fetch_all_fruits() {
+    func testFetchAllFruits() {
         
         // Given A apiservice
         let sut = self.apiCall
@@ -106,22 +104,17 @@ class APITests: XCTestCase {
             return Promise<FruitsListModel>.value(fruits)
         }.catch { [weak self] error in
             guard let self = self else { return }
-            print("Error-->",error.localizedDescription)
             XCTFail(error.localizedDescription)
         }
             .finally {
-                self.test_By_category(type: .AllFruits)
-                sleep(2)
-                self.test_By_category(type: .FruitsByFamily)
-                sleep(2)
-                self.test_By_category(type: .FruitsByGenus)
-                sleep(2)
-                self.test_By_category(type: .FruitsByOrder)
-                sleep(2)
-                print(self.filteredResponse1?.count)
-                print(self.filteredResponse2?.count)
-                print(self.filteredResponse3?.count)
-                print(self.filteredResponse4?.count)
+                self.testByCategory(type: .AllFruits)
+                self.testByCategory(type: .FruitsByFamily)
+                self.testByCategory(type: .FruitsByGenus)
+                self.testByCategory(type: .FruitsByOrder)
+                XCTAssertNotNil(self.filteredResponse1)
+                XCTAssertNotNil(self.filteredResponse2)
+                XCTAssertNotNil(self.filteredResponse3)
+                XCTAssertNotNil(self.filteredResponse4)
 
                 expect.fulfill()
             }
@@ -129,7 +122,7 @@ class APITests: XCTestCase {
         wait(for: [expect], timeout: 10.0) //Timeout
     }
     
-    func test_By_category(type:Category) {
+    func testByCategory(type:Category) {
         XCTAssertGreaterThan( self.fruitsValues?.count ?? 0, 0) // check greater than
         if let dataV = self.fruitsValues {
             

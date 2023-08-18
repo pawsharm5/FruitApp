@@ -16,7 +16,6 @@ target 'FruitApp' do
 
   target 'FruitAppUITests' do
     # Pods for testing
-    inherit! :search_paths
   end
 
 end

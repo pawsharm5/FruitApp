@@ -26,14 +26,6 @@ extension UIStoryboard {
         self.init(name: storyboard.filename, bundle: bundle)
     }
     
-    
-    // MARK: - Class Functions
-    
-    class func storyboard(_ storyboard: Storyboard, bundle: Bundle? = nil) -> UIStoryboard {
-        return UIStoryboard(name: storyboard.filename, bundle: bundle)
-    }
-    
-    
     // MARK: - View Controller Instantiation from Generics
     
     func instantiateViewController<T: UIViewController>() -> T where T: StoryboardIdentifiable {

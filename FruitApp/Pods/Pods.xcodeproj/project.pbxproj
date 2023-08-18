@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013AEA0EB08970373D0A2DF6CA507199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
 		04499C6441C5BB40764467B8A158FE11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
 		04A8430BFC619C34E5F4D3878D094380 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037D2417B9CE22784FB9C353F2955090 /* CachedResponseHandler.swift */; };
 		05C180652C6CFC4D07BAAC46791FF57D /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = EA93686821DF3078AD035F38495AA8F3 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		079F0820555C5B86C9FBD5EC6344137F /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DB09D5A2500F14F3D3F74F16C4EE0C /* Protected.swift */; };
-		0B692B135B980778AE25D9606B7D6DC0 /* Pods-FruitApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A580A2F1AAC79C11ABC5A15E4C96C /* Pods-FruitApp-dummy.m */; };
+		0B692B135B980778AE25D9606B7D6DC0 /* Pods-FruitApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E7B27DEC419AE5B1532C392BAEF2CC /* Pods-FruitApp-dummy.m */; };
 		11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDCD5E05D19000DA172EBF7FB609DEB /* URLRequest+Alamofire.swift */; };
 		14A73129BB994FF1F4A47F9D1C26ABDB /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250A4B8597A5CB4F20B46658C8F94FD /* UIView+Promise.swift */; };
 		17EB06C53298137670C0CBC060CA4482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
@@ -44,9 +43,10 @@
 		529173B31EFCD3D199E79866AFBEC86C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D4D54219DD85CFF9E7D8ECC20D9B8 /* HTTPHeaders.swift */; };
 		529EB5D8AB59D78681AF9F8D4A05A290 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9209DB95EF7BC4FDE7EE297D86E03E49 /* Process+Promise.swift */; };
 		5731194A875A09FD09DA55244B79DE9A /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8CE80EB54519D3C45E0290FBB38D5D /* when.m */; };
+		593CD766C042E359EC106D2B0FC0DDD8 /* Pods-FruitApp-FruitAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF704B0D1654F9B6AA8C71598019FC2 /* Pods-FruitApp-FruitAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B92A66A66BD639411C3D839A0F87B0C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7190DDF712098F2F81CAF3C7497FF /* Request.swift */; };
-		619C4DA9E03742B4AD2346B7B6C3E1A2 /* Pods-FruitAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D71E4D4AFC869762D988B690EC17EA /* Pods-FruitAppTests-dummy.m */; };
-		62A4106969BB9F9569E65E5A6BCBCCA5 /* Pods-FruitAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C65ABD849C1783894EF98DA1103B32 /* Pods-FruitAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		619C4DA9E03742B4AD2346B7B6C3E1A2 /* Pods-FruitAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE4783DA96D562D4A00D3A7691A3F3 /* Pods-FruitAppTests-dummy.m */; };
+		62A4106969BB9F9569E65E5A6BCBCCA5 /* Pods-FruitAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8650D72DB87D9F8DC75693A6DA5C42E /* Pods-FruitAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		643A7AFFB7AEB70B2B9B7E0926055023 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B61B3FF635DE1B7C8D2547008DA96 /* RetryPolicy.swift */; };
 		67B10FEAA3B7E5387D20E76B1085E94D /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7D17178DCDB51DF64CE983CEA9818 /* URLSessionConfiguration+Alamofire.swift */; };
 		6B696CB916B786C5294B0C2ECF6BE33C /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084B1E1608933AFBB3F486FD481FEA9 /* afterlife.swift */; };
@@ -55,7 +55,6 @@
 		77AB6AF4BFC6DE016DA7C057B5799C84 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F1181C52FC355B35BF8275E6C89BA9 /* ServerTrustEvaluation.swift */; };
 		78B1DD1219182494A6AFAD26AAB20AA6 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667F59AF73B3DB54CAE61479C9491BD /* Concurrency.swift */; };
 		7C2E0035785383944DD862671C50D1B5 /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B207F295C37690B7D283CC207784DF /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C68B6038B1F716480E46E4F1386A870 /* Pods-FruitAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F72E48201E1F8E44EF7A787C943D90F /* Pods-FruitAppUITests-dummy.m */; };
 		7D396C02273C1E07E1D190D8837B00EE /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = C35041FABB9D904BDBDB6F50F75E2850 /* UIViewController+AnyPromise.m */; };
 		7D64BC3E6CAA4AB54EAC0AAADE93F578 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1E1BDDF3D36FEF84D6B698A3B2CB4B /* OperationQueue+Alamofire.swift */; };
 		80DBEB9E8BC6A596638A1E7C493A812F /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABDC4878B6CA91C602AA0AB61FAC7F3 /* race.swift */; };
@@ -65,7 +64,8 @@
 		8AF166CBACF447CD059D14E0BF1F15D4 /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78323C5AB1DBA45E5E4D0FD7AC4105E1 /* Thenable.swift */; };
 		8E698F134A953250D5834C8B83CDAD34 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3425D6BB63074DE6BE6305C9348598 /* DispatchQueue+Alamofire.swift */; };
 		8E85763AE29BEF0A46EE875B8F069E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
-		9762A7B61BED514CD716C7AA4A5F4D52 /* Pods-FruitApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9796C3A877D4DF729179AC4BDD7C2855 /* Pods-FruitApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9762A7B61BED514CD716C7AA4A5F4D52 /* Pods-FruitApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4CBD89DEBCEEF07A6BD5B421E42505 /* Pods-FruitApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		979470E7DE87ADDC5ADEDDB1C143C4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */; };
 		97D666169760FCEFE89FA8FA540F7288 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1483EB8A793A7793FFC5D3A4C5B2A974 /* Promise.swift */; };
 		99D27C6F3A0D9B5E8F69F260013B1353 /* LogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57253D291E351132BE598E6F194E3743 /* LogEvent.swift */; };
 		9E27CCAA4258BADABC4C1F539D9744B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EABD36049BE9D07F798AE9543EF734 /* UIKit.framework */; };
@@ -74,10 +74,10 @@
 		A780034C3E537A710F003B44E97B7126 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90169039920334F4094F4ECA201FEEAD /* NSURLSession+Promise.swift */; };
 		AA721ECC2B36AFB7D9FE70C83E6D63F9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4AD5351456396EBCB23F3B1353FCCD /* Response.swift */; };
 		AD64BBE66D37C9D8B4C0B2089755B354 /* race.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D478C16DE1641AAA3A58D1AA1A2A0C /* race.m */; };
+		AFE9A9EAB919E0280F1DE91BC7D131F0 /* Pods-FruitApp-FruitAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AADDC318345770DE6D072BA970CF3D /* Pods-FruitApp-FruitAppUITests-dummy.m */; };
 		B17D933C8F8BC6A4F91AA620D7D7A870 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFC70C5865646275C563DF14C1248F /* ParameterEncoder.swift */; };
 		B34BFA27966478815AE572C04DD99FAF /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0158D7994A7FE508B8C0B0557D95A8D8 /* NSNotificationCenter+Promise.swift */; };
 		B5DB6DC55A55B997AFE235D942991DFE /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E85F2FF9E7661B8885471CB110C5D4E6 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B71012E4014FF2351263F7E2B76928CE /* Pods-FruitAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8001087B91498F22666E7A28158D5E0A /* Pods-FruitAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B94061A2644AA94E8345FC8F1931066F /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 765E731E6FC24A8B78F252B16DCE5B53 /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9E19002E8ED90436EBE1F6EC0C2AC32 /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA12917EF7A2CF9B4B222372B399175 /* UIViewPropertyAnimator+Promise.swift */; };
 		BAB17A1C6CAD14B3788973EAF8466C93 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29778A699169678F25B56F357A77BB /* NetworkReachabilityManager.swift */; };
@@ -112,12 +112,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4628B42E20ED756E0F34F79CFDABEBC /* PBXContainerItemProxy */ = {
+		7A7E8CBA0D0B3F052F3C790FA1E8B1B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 10BAE6E65F0684D7F9D40D77835C4374;
-			remoteInfo = "Pods-FruitApp";
+			remoteGlobalIDString = 7C579CE66A1E7A9AA33CA5F97F9C22C5;
+			remoteInfo = PromiseKit;
 		};
 		AD8F599FCF6E19399867B778E12F2EC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -127,6 +127,13 @@
 			remoteInfo = "Pods-FruitApp";
 		};
 		D6967200A3193674DAF6B8D8396A086C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		D73D3B16E75E805EA4A44FBB42DD65D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -149,35 +156,35 @@
 		037D2417B9CE22784FB9C353F2955090 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		03C5BE1420C23FBAF7CF56ABF73D506C /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		072E3321847B472CF6183614D624D2BC /* Pods-FruitAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FruitAppTests"; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		079AED347CAFD3DE1744394F43F43D4E /* Pods-FruitApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitApp.modulemap"; sourceTree = "<group>"; };
 		07C1FC98142F3ED5336883B76E5A57E7 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
 		087D7AA4D01FCEF78D17984A40E1EEF5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		0A1E1BDDF3D36FEF84D6B698A3B2CB4B /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		0C00D9275B9805FFE6ECE6EE2CBEF91B /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		0CA12917EF7A2CF9B4B222372B399175 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
-		0DC33010FAB0FD4550F2EE9DA3ADE90E /* Pods-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0E15B422444385578F85C752BE850D2E /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		0E3425D6BB63074DE6BE6305C9348598 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		10A001A2BD2941B1C48004C0318E5E24 /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
+		10FD222BC92A600E6AEC0BBD28E8E375 /* Pods-FruitApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		13719273FC73DD4CE229B71B76D7C5AF /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
 		13A9356A5155E8CC79158B39C68A5F25 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		1483EB8A793A7793FFC5D3A4C5B2A974 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
-		14CA48AEFD6B696E6CADFBE9D22597EF /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		14EABD36049BE9D07F798AE9543EF734 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		1727DC27DC0D3637934CE74C9775CE64 /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
 		188595F27DDD7B76AEDAEC31B70BAC48 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		18D625A71DC0E097AB45A45E626F658E /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		1A552BA246A2C48C7B19E48938B9520E /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Async.swift; sourceTree = "<group>"; };
-		1D7EACD236DF26ADF1278C03F92C81B3 /* Pods-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		20FD087351F69492C2D41B6CD93A03F6 /* Pods-FruitApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FruitApp-frameworks.sh"; sourceTree = "<group>"; };
+		1C58A8113148B8BF37EED2774537EE39 /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		21A0B1E258D2079F1DC5D7A2095F7E7B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		274A7751BD4219D11B4EA3D7FF6D86CB /* Pods-FruitApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FruitApp-frameworks.sh"; sourceTree = "<group>"; };
 		2787D5CD1B0585FF411C4FC9E8B5EC02 /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
 		286C74F2C9B5A82BF27345C486E4C177 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		2EF9A0194221AC92403D3DBDDB7B0660 /* Pods-FruitAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppUITests-Info.plist"; sourceTree = "<group>"; };
+		2D4BB4F0C2BD77D940C22A978903F258 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2F4AD5351456396EBCB23F3B1353FCCD /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		2F72E48201E1F8E44EF7A787C943D90F /* Pods-FruitAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitAppUITests-dummy.m"; sourceTree = "<group>"; };
 		3058CAFB0E9C11BCA66FED0DC9BD2FEC /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
-		39C65ABD849C1783894EF98DA1103B32 /* Pods-FruitAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitAppTests-umbrella.h"; sourceTree = "<group>"; };
+		34E9C1F5687715146902991206F98BEE /* Pods-FruitApp-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		395A53F8751A35D9C9F49BEE6C3728E2 /* Pods-FruitApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		39CE2B7DE3B23184A1E2055DC9DFC20A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		3D4CBD89DEBCEEF07A6BD5B421E42505 /* Pods-FruitApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitApp-umbrella.h"; sourceTree = "<group>"; };
 		4134900E380F4C7FED7DBFCC6258B780 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		41A89CA68B9E703450E98D2B10B5B47E /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		43DB09D5A2500F14F3D3F74F16C4EE0C /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
@@ -189,8 +196,9 @@
 		4BC7CE20920501D77DFC2ACF9AB43BF9 /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
 		4CCFF528EFE41F00CDBE474A192601D2 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
 		4DDB087525FEBA09A051E41AEB3349D6 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
-		502A580A2F1AAC79C11ABC5A15E4C96C /* Pods-FruitApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitApp-dummy.m"; sourceTree = "<group>"; };
+		4E4859354E7771684A10A39F0010C2BA /* Pods-FruitApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitApp.modulemap"; sourceTree = "<group>"; };
 		542C91A76F0A97965D5C7A3DA5B5BFFE /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		54AE4783DA96D562D4A00D3A7691A3F3 /* Pods-FruitAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitAppTests-dummy.m"; sourceTree = "<group>"; };
 		56F2C5634CA019202CE017AAE2FA3E16 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
 		57253D291E351132BE598E6F194E3743 /* LogEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LogEvent.swift; path = Sources/LogEvent.swift; sourceTree = "<group>"; };
 		58D478C16DE1641AAA3A58D1AA1A2A0C /* race.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = race.m; path = Sources/race.m; sourceTree = "<group>"; };
@@ -205,63 +213,62 @@
 		667773CA22F87FDBD7C097A3CECD80BD /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		66FCFA3D73F069B8DD848E9B24F595E6 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Sources/Combine.swift; sourceTree = "<group>"; };
 		6E02E5875A90452FD8B715B0D0871EC6 /* Pods-FruitApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FruitApp"; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F05FDCF3463510D8398F498E8CD3457 /* Pods-FruitAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E5CF518926D6C9D7107D59092B44AF0 /* Pods-FruitAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6FBC11DB09DBA748D911B10A7109C9FC /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
+		70AADDC318345770DE6D072BA970CF3D /* Pods-FruitApp-FruitAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitApp-FruitAppUITests-dummy.m"; sourceTree = "<group>"; };
 		765E731E6FC24A8B78F252B16DCE5B53 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
 		78323C5AB1DBA45E5E4D0FD7AC4105E1 /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
-		7AF1CE005716FEB1DCEAA3A87C501630 /* Pods-FruitAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FruitAppUITests"; path = Pods_FruitAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBFC70C5865646275C563DF14C1248F /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		8001087B91498F22666E7A28158D5E0A /* Pods-FruitAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		817D6D08BBB3A88726EDEA89D0CBE47C /* Pods-FruitAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppTests-Info.plist"; sourceTree = "<group>"; };
 		83F7F05AD4C5EAEEBF1D27D20BC10CC8 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		84F1181C52FC355B35BF8275E6C89BA9 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		8C2F9CED8F901204CB669330DCEBAC29 /* Pods-FruitApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87107BAEC23ABF20957909DA125454B0 /* Pods-FruitApp-FruitAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-FruitAppUITests-Info.plist"; sourceTree = "<group>"; };
 		90169039920334F4094F4ECA201FEEAD /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		9209DB95EF7BC4FDE7EE297D86E03E49 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		9266F5CE8A6BC98EC90DACF3C84A5DBF /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		92B207F295C37690B7D283CC207784DF /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
-		92F652F559F68245B9FBB9980F003511 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
 		96A5F67BD4808F70145BF0D8AEAC8A6E /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		96EA32480BF6C16B61A124134F90FEC8 /* Pods-FruitAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitAppUITests.modulemap"; sourceTree = "<group>"; };
-		97562C4C8DD47BA0E62328A10B9617B1 /* Pods-FruitAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9796C3A877D4DF729179AC4BDD7C2855 /* Pods-FruitApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitApp-umbrella.h"; sourceTree = "<group>"; };
+		97A135DF82A8922078A226C6D77A7969 /* Pods-FruitApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-Info.plist"; sourceTree = "<group>"; };
 		9B29778A699169678F25B56F357A77BB /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		9B8CE80EB54519D3C45E0290FBB38D5D /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
+		9CF704B0D1654F9B6AA8C71598019FC2 /* Pods-FruitApp-FruitAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitApp-FruitAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		9D252184752DF2EA60E0D6F64FA49721 /* Pods-FruitApp-FruitAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-FruitAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F849EB1701381125C2CCEBA271B7D0A /* Pods-FruitApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-Info.plist"; sourceTree = "<group>"; };
 		A19B59B781E529A1BBEC60D44FB2AA73 /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		A2EB2D5DB29DDC080A70CD68C9282448 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		A3098952ECDE45347139722D3BDD13ED /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
 		A49120B9238D30406C01E5D9FD7192B2 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		A60828F9C2F826AF68917ED0F2811569 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A822AD0AA0BD5E0D70F8EE0CC177C902 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
 		A9A13A9DCD2A7FFA0BFCC3D3B08BDC9B /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
-		AC7DC98420EDF2B2FF7D0F7BB2EB01E1 /* Pods-FruitApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		ACC171867D3B3C8C7ECBB6B0F1F77DC4 /* PromiseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.release.xcconfig; sourceTree = "<group>"; };
+		AD8834D69A60AAFA34F578E0667E416F /* Pods-FruitApp-FruitAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FruitApp-FruitAppUITests"; path = Pods_FruitApp_FruitAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDA270AE1289B7CD49E823834A8C634 /* Pods-FruitApp-FruitAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitApp-FruitAppUITests.modulemap"; sourceTree = "<group>"; };
 		B1D0C9E1467C1650710DFBBEB28786A2 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
 		B8F01AB62E291F184E49BD5E809E56C8 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		B92C9DC895033AFD8F520F094C0B7862 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		BB0109ABEC920B1C310587C272C40E0C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		C0D71E4D4AFC869762D988B690EC17EA /* Pods-FruitAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitAppTests-dummy.m"; sourceTree = "<group>"; };
+		BB731B08039D77D503338B12F7A0983A /* Pods-FruitAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitAppTests.modulemap"; sourceTree = "<group>"; };
 		C35041FABB9D904BDBDB6F50F75E2850 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
+		C677F108066309242E0F6EE03314FAC0 /* Pods-FruitApp-FruitAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FruitApp-FruitAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C94AB7C14CD4E3D24C32DDF52B1175F3 /* Pods-FruitAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C95140FAF61A4E4ACDB5E324EE67FFEB /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		CA4F3DA732CE90FA4ACE1C8A398CEC10 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCADB320EF8EFBA481BBBEBC28C136DB /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
-		CCDC486023B9AC4EB1FE16E95DFB843F /* Pods-FruitAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppTests-Info.plist"; sourceTree = "<group>"; };
 		CFDCD5E05D19000DA172EBF7FB609DEB /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		D084B1E1608933AFBB3F486FD481FEA9 /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
 		D0CD80DD378DE5D87E104732E49A971E /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		D1D52628CFC9F0A47D9ADDD1BBC39238 /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
 		D250A4B8597A5CB4F20B46658C8F94FD /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
-		D712251A8394FE7C5F2ACE88A16F9C37 /* Pods-FruitAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FruitAppTests.modulemap"; sourceTree = "<group>"; };
-		DA858F788F8B1FA2AF9D819AAD9FCB9C /* Pods-FruitAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D8650D72DB87D9F8DC75693A6DA5C42E /* Pods-FruitAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FruitAppTests-umbrella.h"; sourceTree = "<group>"; };
 		DB353EC68ACE66DA2B942CB59F21B3E7 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
 		DD10FA3D115CF29BACAA5D993C0FD051 /* PromiseKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PromiseKit-Info.plist"; sourceTree = "<group>"; };
 		DEDD2072E97A2A4AEFFF2D47B5E59951 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		E3C60183B57739295D316FC6010516CA /* Pods-FruitApp-FruitAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FruitApp-FruitAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E46954F6CCED8AB0CFA91B6D44EA5BBB /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		E667F59AF73B3DB54CAE61479C9491BD /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		E73EEF4EEAED11ABDCB1B17B55A75355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E74488654B1E425CAA71407FD97CA102 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
 		E85F2FF9E7661B8885471CB110C5D4E6 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
-		E94A20BC7325A9DD56C4863E27CEDFB6 /* Pods-FruitAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FruitAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E954D2EFEEF0C473CF70FAF50A5D2A2B /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
 		EA93686821DF3078AD035F38495AA8F3 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
 		F07C8E3A0F32EA14D140635087364269 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
@@ -270,15 +277,24 @@
 		F1C7190DDF712098F2F81CAF3C7497FF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		F2F5436378F927DD3B55C3ECC823AB10 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
 		F321D2B39673B810E5705E741AC00946 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		F3E7B27DEC419AE5B1532C392BAEF2CC /* Pods-FruitApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FruitApp-dummy.m"; sourceTree = "<group>"; };
 		F4528AA4716243E7DD2F8183B089A957 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		F87F73B2AE6FE8CA660DDF1D0674B248 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
-		FA2D0BF2432016FD804AFF8048267B80 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
 		FA8D4D54219DD85CFF9E7D8ECC20D9B8 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		FB3AB4015E71CC99311EBAB488AB7A50 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
 		FC7ADE62C0AB9C11F8FC9E15F5ED5C53 /* RequestCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCompression.swift; path = Source/RequestCompression.swift; sourceTree = "<group>"; };
+		FC897D84EDCD24D6BC9A632720A4E972 /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FruitApp-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		085F1DB9CD6A53B360847D338EA0119B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				979470E7DE87ADDC5ADEDDB1C143C4CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BF6E64D3157435E5797A5278584A4DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,14 +310,6 @@
 			files = (
 				04499C6441C5BB40764467B8A158FE11 /* Foundation.framework in Frameworks */,
 				9E27CCAA4258BADABC4C1F539D9744B8 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A24D93B7E00F6B24517306B766D58A44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				013AEA0EB08970373D0A2DF6CA507199 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,22 +338,6 @@
 				42770F1B96541EE8183D1D6A56FFEDCB /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		05BC9132F14B5B469E4B2ACDAD8C2A40 /* Pods-FruitAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				96EA32480BF6C16B61A124134F90FEC8 /* Pods-FruitAppUITests.modulemap */,
-				97562C4C8DD47BA0E62328A10B9617B1 /* Pods-FruitAppUITests-acknowledgements.markdown */,
-				6F05FDCF3463510D8398F498E8CD3457 /* Pods-FruitAppUITests-acknowledgements.plist */,
-				2F72E48201E1F8E44EF7A787C943D90F /* Pods-FruitAppUITests-dummy.m */,
-				2EF9A0194221AC92403D3DBDDB7B0660 /* Pods-FruitAppUITests-Info.plist */,
-				8001087B91498F22666E7A28158D5E0A /* Pods-FruitAppUITests-umbrella.h */,
-				1D7EACD236DF26ADF1278C03F92C81B3 /* Pods-FruitAppUITests.debug.xcconfig */,
-				0DC33010FAB0FD4550F2EE9DA3ADE90E /* Pods-FruitAppUITests.release.xcconfig */,
-			);
-			name = "Pods-FruitAppUITests";
-			path = "Target Support Files/Pods-FruitAppUITests";
 			sourceTree = "<group>";
 		};
 		233739D37D2C26C7495289CE8EF51ED5 /* UIKit */ = {
@@ -482,6 +474,18 @@
 			name = CorePromise;
 			sourceTree = "<group>";
 		};
+		6BF31BDB47B869732968A0CCCA88CCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				6E02E5875A90452FD8B715B0D0871EC6 /* Pods-FruitApp */,
+				AD8834D69A60AAFA34F578E0667E416F /* Pods-FruitApp-FruitAppUITests */,
+				072E3321847B472CF6183614D624D2BC /* Pods-FruitAppTests */,
+				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8B9C2F5211F9F08E241865DFA9A342BC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,18 +513,6 @@
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
-		95BEC54B620384E5BD9D4F65F0C34025 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				6E02E5875A90452FD8B715B0D0871EC6 /* Pods-FruitApp */,
-				072E3321847B472CF6183614D624D2BC /* Pods-FruitAppTests */,
-				7AF1CE005716FEB1DCEAA3A87C501630 /* Pods-FruitAppUITests */,
-				002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		96FB8E9CAE374B06FF8E176A15AF1F91 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,28 +528,29 @@
 			path = "../Target Support Files/PromiseKit";
 			sourceTree = "<group>";
 		};
-		A08A11B3B4C27C74EAFA5EA945276E4D /* Pods-FruitAppTests */ = {
+		BC3D4FB321968BF6694A93EB7DACC56A /* Pods-FruitApp-FruitAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D712251A8394FE7C5F2ACE88A16F9C37 /* Pods-FruitAppTests.modulemap */,
-				DA858F788F8B1FA2AF9D819AAD9FCB9C /* Pods-FruitAppTests-acknowledgements.markdown */,
-				E94A20BC7325A9DD56C4863E27CEDFB6 /* Pods-FruitAppTests-acknowledgements.plist */,
-				C0D71E4D4AFC869762D988B690EC17EA /* Pods-FruitAppTests-dummy.m */,
-				CCDC486023B9AC4EB1FE16E95DFB843F /* Pods-FruitAppTests-Info.plist */,
-				39C65ABD849C1783894EF98DA1103B32 /* Pods-FruitAppTests-umbrella.h */,
-				CA4F3DA732CE90FA4ACE1C8A398CEC10 /* Pods-FruitAppTests.debug.xcconfig */,
-				14CA48AEFD6B696E6CADFBE9D22597EF /* Pods-FruitAppTests.release.xcconfig */,
+				AEDA270AE1289B7CD49E823834A8C634 /* Pods-FruitApp-FruitAppUITests.modulemap */,
+				E3C60183B57739295D316FC6010516CA /* Pods-FruitApp-FruitAppUITests-acknowledgements.markdown */,
+				9D252184752DF2EA60E0D6F64FA49721 /* Pods-FruitApp-FruitAppUITests-acknowledgements.plist */,
+				70AADDC318345770DE6D072BA970CF3D /* Pods-FruitApp-FruitAppUITests-dummy.m */,
+				C677F108066309242E0F6EE03314FAC0 /* Pods-FruitApp-FruitAppUITests-frameworks.sh */,
+				87107BAEC23ABF20957909DA125454B0 /* Pods-FruitApp-FruitAppUITests-Info.plist */,
+				9CF704B0D1654F9B6AA8C71598019FC2 /* Pods-FruitApp-FruitAppUITests-umbrella.h */,
+				FC897D84EDCD24D6BC9A632720A4E972 /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */,
+				34E9C1F5687715146902991206F98BEE /* Pods-FruitApp-FruitAppUITests.release.xcconfig */,
 			);
-			name = "Pods-FruitAppTests";
-			path = "Target Support Files/Pods-FruitAppTests";
+			name = "Pods-FruitApp-FruitAppUITests";
+			path = "Target Support Files/Pods-FruitApp-FruitAppUITests";
 			sourceTree = "<group>";
 		};
-		B6AFCD77DBEBD49BD8B2EE92A81542D3 /* Targets Support Files */ = {
+		CA9EAFCF6CE664C8BE2023F4596849EF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9EE27E2F46D87E5067CEBB7D847B10D /* Pods-FruitApp */,
-				A08A11B3B4C27C74EAFA5EA945276E4D /* Pods-FruitAppTests */,
-				05BC9132F14B5B469E4B2ACDAD8C2A40 /* Pods-FruitAppUITests */,
+				E3156900D8EF65E38AC850615D4CC199 /* Pods-FruitApp */,
+				BC3D4FB321968BF6694A93EB7DACC56A /* Pods-FruitApp-FruitAppUITests */,
+				FEB25D3BA08D662939F60E41748ACB0C /* Pods-FruitAppTests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -568,26 +561,42 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				3AA9BB08E24733474EBE5164169E45A6 /* Pods */,
-				95BEC54B620384E5BD9D4F65F0C34025 /* Products */,
-				B6AFCD77DBEBD49BD8B2EE92A81542D3 /* Targets Support Files */,
+				6BF31BDB47B869732968A0CCCA88CCFD /* Products */,
+				CA9EAFCF6CE664C8BE2023F4596849EF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D9EE27E2F46D87E5067CEBB7D847B10D /* Pods-FruitApp */ = {
+		E3156900D8EF65E38AC850615D4CC199 /* Pods-FruitApp */ = {
 			isa = PBXGroup;
 			children = (
-				079AED347CAFD3DE1744394F43F43D4E /* Pods-FruitApp.modulemap */,
-				8C2F9CED8F901204CB669330DCEBAC29 /* Pods-FruitApp-acknowledgements.markdown */,
-				AC7DC98420EDF2B2FF7D0F7BB2EB01E1 /* Pods-FruitApp-acknowledgements.plist */,
-				502A580A2F1AAC79C11ABC5A15E4C96C /* Pods-FruitApp-dummy.m */,
-				20FD087351F69492C2D41B6CD93A03F6 /* Pods-FruitApp-frameworks.sh */,
-				9F849EB1701381125C2CCEBA271B7D0A /* Pods-FruitApp-Info.plist */,
-				9796C3A877D4DF729179AC4BDD7C2855 /* Pods-FruitApp-umbrella.h */,
-				FA2D0BF2432016FD804AFF8048267B80 /* Pods-FruitApp.debug.xcconfig */,
-				92F652F559F68245B9FBB9980F003511 /* Pods-FruitApp.release.xcconfig */,
+				4E4859354E7771684A10A39F0010C2BA /* Pods-FruitApp.modulemap */,
+				395A53F8751A35D9C9F49BEE6C3728E2 /* Pods-FruitApp-acknowledgements.markdown */,
+				10FD222BC92A600E6AEC0BBD28E8E375 /* Pods-FruitApp-acknowledgements.plist */,
+				F3E7B27DEC419AE5B1532C392BAEF2CC /* Pods-FruitApp-dummy.m */,
+				274A7751BD4219D11B4EA3D7FF6D86CB /* Pods-FruitApp-frameworks.sh */,
+				97A135DF82A8922078A226C6D77A7969 /* Pods-FruitApp-Info.plist */,
+				3D4CBD89DEBCEEF07A6BD5B421E42505 /* Pods-FruitApp-umbrella.h */,
+				2D4BB4F0C2BD77D940C22A978903F258 /* Pods-FruitApp.debug.xcconfig */,
+				0C00D9275B9805FFE6ECE6EE2CBEF91B /* Pods-FruitApp.release.xcconfig */,
 			);
 			name = "Pods-FruitApp";
 			path = "Target Support Files/Pods-FruitApp";
+			sourceTree = "<group>";
+		};
+		FEB25D3BA08D662939F60E41748ACB0C /* Pods-FruitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB731B08039D77D503338B12F7A0983A /* Pods-FruitAppTests.modulemap */,
+				6E5CF518926D6C9D7107D59092B44AF0 /* Pods-FruitAppTests-acknowledgements.markdown */,
+				C94AB7C14CD4E3D24C32DDF52B1175F3 /* Pods-FruitAppTests-acknowledgements.plist */,
+				54AE4783DA96D562D4A00D3A7691A3F3 /* Pods-FruitAppTests-dummy.m */,
+				817D6D08BBB3A88726EDEA89D0CBE47C /* Pods-FruitAppTests-Info.plist */,
+				D8650D72DB87D9F8DC75693A6DA5C42E /* Pods-FruitAppTests-umbrella.h */,
+				A60828F9C2F826AF68917ED0F2811569 /* Pods-FruitAppTests.debug.xcconfig */,
+				1C58A8113148B8BF37EED2774537EE39 /* Pods-FruitAppTests.release.xcconfig */,
+			);
+			name = "Pods-FruitAppTests";
+			path = "Target Support Files/Pods-FruitAppTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -611,19 +620,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45E8BB89D14E75760AEA1D0560AD8FF7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593CD766C042E359EC106D2B0FC0DDD8 /* Pods-FruitApp-FruitAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		918621EC5B474419D7A9928CC488E5A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9762A7B61BED514CD716C7AA4A5F4D52 /* Pods-FruitApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF59DFD8F2FD525879B5EE1A9157C74 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B71012E4014FF2351263F7E2B76928CE /* Pods-FruitAppUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +694,26 @@
 			productReference = 6E02E5875A90452FD8B715B0D0871EC6 /* Pods-FruitApp */;
 			productType = "com.apple.product-type.framework";
 		};
+		2ED0CC40F78F0F993C5ACB2958EA9666 /* Pods-FruitApp-FruitAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD56D07C0E18697D2497D0037F3F818C /* Build configuration list for PBXNativeTarget "Pods-FruitApp-FruitAppUITests" */;
+			buildPhases = (
+				45E8BB89D14E75760AEA1D0560AD8FF7 /* Headers */,
+				32DB1286030467D0D5DEB8B1510FE655 /* Sources */,
+				085F1DB9CD6A53B360847D338EA0119B /* Frameworks */,
+				3150EC775D62C187F56A4CEFFD658B4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A48A2605FC998867B32B9FC5680AE849 /* PBXTargetDependency */,
+				E5F42BEF1121D48BFDA487BDFE3097AC /* PBXTargetDependency */,
+			);
+			name = "Pods-FruitApp-FruitAppUITests";
+			productName = Pods_FruitApp_FruitAppUITests;
+			productReference = AD8834D69A60AAFA34F578E0667E416F /* Pods-FruitApp-FruitAppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
 		7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFE0A9977EE5E0FCF06DE04FCE5E326B /* Build configuration list for PBXNativeTarget "PromiseKit" */;
@@ -701,25 +730,6 @@
 			name = PromiseKit;
 			productName = PromiseKit;
 			productReference = 002B1E88BA14EBF633CD66EBFBA107E9 /* PromiseKit */;
-			productType = "com.apple.product-type.framework";
-		};
-		D424803169727B8D757259AC7D93F2F4 /* Pods-FruitAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B4411B5B9EEFB074F3A0C3A1E8CE8B36 /* Build configuration list for PBXNativeTarget "Pods-FruitAppUITests" */;
-			buildPhases = (
-				9DF59DFD8F2FD525879B5EE1A9157C74 /* Headers */,
-				E86638B85A40A85F8E1F67453F8831D3 /* Sources */,
-				A24D93B7E00F6B24517306B766D58A44 /* Frameworks */,
-				B8BEFFB5AEE50EA5CF64AC93C47A8527 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2052E088BED55C26EA8ADDE0A7C8A277 /* PBXTargetDependency */,
-			);
-			name = "Pods-FruitAppUITests";
-			productName = Pods_FruitAppUITests;
-			productReference = 7AF1CE005716FEB1DCEAA3A87C501630 /* Pods-FruitAppUITests */;
 			productType = "com.apple.product-type.framework";
 		};
 		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
@@ -758,14 +768,14 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 95BEC54B620384E5BD9D4F65F0C34025 /* Products */;
+			productRefGroup = 6BF31BDB47B869732968A0CCCA88CCFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				10BAE6E65F0684D7F9D40D77835C4374 /* Pods-FruitApp */,
+				2ED0CC40F78F0F993C5ACB2958EA9666 /* Pods-FruitApp-FruitAppUITests */,
 				02C00C25DDB9316942C5D91CCD939530 /* Pods-FruitAppTests */,
-				D424803169727B8D757259AC7D93F2F4 /* Pods-FruitAppUITests */,
 				7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */,
 			);
 		};
@@ -779,14 +789,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		565FD2058706F22D2347B30C65280F30 /* Resources */ = {
+		3150EC775D62C187F56A4CEFFD658B4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8BEFFB5AEE50EA5CF64AC93C47A8527 /* Resources */ = {
+		565FD2058706F22D2347B30C65280F30 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -855,6 +865,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		32DB1286030467D0D5DEB8B1510FE655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE9A9EAB919E0280F1DE91BC7D131F0 /* Pods-FruitApp-FruitAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		42E8F35CFB6C6911F7BE4B8CCD68CB45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -917,23 +935,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86638B85A40A85F8E1F67453F8831D3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7C68B6038B1F716480E46E4F1386A870 /* Pods-FruitAppUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2052E088BED55C26EA8ADDE0A7C8A277 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-FruitApp";
-			target = 10BAE6E65F0684D7F9D40D77835C4374 /* Pods-FruitApp */;
-			targetProxy = A4628B42E20ED756E0F34F79CFDABEBC /* PBXContainerItemProxy */;
-		};
 		468B5C1317CF237C260791D391808FA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -952,12 +956,24 @@
 			target = 10BAE6E65F0684D7F9D40D77835C4374 /* Pods-FruitApp */;
 			targetProxy = AD8F599FCF6E19399867B778E12F2EC8 /* PBXContainerItemProxy */;
 		};
+		A48A2605FC998867B32B9FC5680AE849 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = D73D3B16E75E805EA4A44FBB42DD65D1 /* PBXContainerItemProxy */;
+		};
+		E5F42BEF1121D48BFDA487BDFE3097AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = 7C579CE66A1E7A9AA33CA5F97F9C22C5 /* PromiseKit */;
+			targetProxy = 7A7E8CBA0D0B3F052F3C790FA1E8B1B3 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		01E97B2DB368EE40A6BE1173BE946A1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA2D0BF2432016FD804AFF8048267B80 /* Pods-FruitApp.debug.xcconfig */;
+			baseConfigurationReference = 2D4BB4F0C2BD77D940C22A978903F258 /* Pods-FruitApp.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -993,9 +1009,9 @@
 			};
 			name = Debug;
 		};
-		4773549A73A2E8B4E7878A3689A81E28 /* Release */ = {
+		11A05BBE0D606DC444A3AF547C8536C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DC33010FAB0FD4550F2EE9DA3ADE90E /* Pods-FruitAppUITests.release.xcconfig */;
+			baseConfigurationReference = FC897D84EDCD24D6BC9A632720A4E972 /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1008,7 +1024,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1017,7 +1033,45 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		27C6BA7A770F5FEECEB1E59E3A5143CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E9C1F5687715146902991206F98BEE /* Pods-FruitApp-FruitAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1135,44 +1189,6 @@
 			};
 			name = Debug;
 		};
-		94F00C3BD99208929F2242F04FD2A728 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D7EACD236DF26ADF1278C03F92C81B3 /* Pods-FruitAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1237,7 +1253,7 @@
 		};
 		A66F9D559A963555DB522A9E34D2CFA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA4F3DA732CE90FA4ACE1C8A398CEC10 /* Pods-FruitAppTests.debug.xcconfig */;
+			baseConfigurationReference = A60828F9C2F826AF68917ED0F2811569 /* Pods-FruitAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1311,7 +1327,7 @@
 		};
 		ADF004BBDA35F7EEF39B993D02812878 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14CA48AEFD6B696E6CADFBE9D22597EF /* Pods-FruitAppTests.release.xcconfig */;
+			baseConfigurationReference = 1C58A8113148B8BF37EED2774537EE39 /* Pods-FruitAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1350,7 +1366,7 @@
 		};
 		B143042B55DDBEAFFD3832D0DC7E44D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F652F559F68245B9FBB9980F003511 /* Pods-FruitApp.release.xcconfig */;
+			baseConfigurationReference = 0C00D9275B9805FFE6ECE6EE2CBEF91B /* Pods-FruitApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1490,20 +1506,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4411B5B9EEFB074F3A0C3A1E8CE8B36 /* Build configuration list for PBXNativeTarget "Pods-FruitAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94F00C3BD99208929F2242F04FD2A728 /* Debug */,
-				4773549A73A2E8B4E7878A3689A81E28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D7761A54AFA2998F27E0BC2FACC2EB53 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7D9E7CD650F798EC835C67DACFEBC4F /* Debug */,
 				F5F3306F2C09AB4B623C805497E28D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD56D07C0E18697D2497D0037F3F818C /* Build configuration list for PBXNativeTarget "Pods-FruitApp-FruitAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11A05BBE0D606DC444A3AF547C8536C9 /* Debug */,
+				27C6BA7A770F5FEECEB1E59E3A5143CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
