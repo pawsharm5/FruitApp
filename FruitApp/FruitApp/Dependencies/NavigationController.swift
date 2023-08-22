@@ -8,11 +8,14 @@
 import Foundation
 import UIKit
 
-protocol AppNavigationControllerProtocol {
-    
+//Solid Interface Segration Principle
+
+protocol pushNavigationProtocol {
     /// To push new view controller in stack
     func push(viewController: UIViewController, animated: Bool)
-    
+}
+
+protocol popNavigationProtocol {
     /// To pop current top view controller in stack
     func pop(animated: Bool)
     
@@ -21,7 +24,9 @@ protocol AppNavigationControllerProtocol {
     
     /// Pop specific view controller in stack
     func popTo(viewController: UIViewController, animated: Bool)
-    
+}
+
+protocol presentNavigationProtocol {
     /// Present ViewController without navigation controller, if presented with this function then push/present over new controller will not work
     func presentViewController(viewController: UIViewController,
                                animated: Bool, completion: (() -> Void)?)
@@ -33,6 +38,10 @@ protocol AppNavigationControllerProtocol {
     
     /// This function will dismiss the navigation controller on which this is called
     func dismiss(completion: (() -> Void)?, animated: Bool)
+}
+
+protocol AppNavigationControllerProtocol: pushNavigationProtocol, popNavigationProtocol, presentNavigationProtocol {
+    
 }
 
 /// Custome AppNavigationController which is subclass of UINavigationController

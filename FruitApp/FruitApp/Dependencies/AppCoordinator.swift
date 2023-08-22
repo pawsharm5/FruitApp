@@ -14,6 +14,7 @@ protocol AppCoordinatorProtocol: Coordinator {
 }
 
 // MARK: AppCoordinator will be launched at the very beginning
+// Solid Dependency Inversion
 final class AppCoordinator: AppCoordinatorProtocol {
     private var window: UIWindow
     private(set) var dependencies: DependencyContainerProtocol
