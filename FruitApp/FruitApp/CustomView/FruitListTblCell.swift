@@ -9,7 +9,10 @@ import UIKit
 
 class FruitListTblCell: UITableViewCell {
     @IBOutlet weak var LabelFruitName: UILabel!
-    @IBOutlet weak var LabelFruitCategory: UILabel!
+    @IBOutlet weak var LabelFamilyName: UILabel!
+    @IBOutlet weak var LabelFamilyGenus: UILabel!
+    @IBOutlet weak var LabelFamilyOrder: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

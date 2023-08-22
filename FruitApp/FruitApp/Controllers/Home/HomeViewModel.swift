@@ -12,13 +12,12 @@ class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     
     private let navigator: HomeViewNavigatorProtocol?
     
-    var allFruitResponse: Observable<[FruitsListModelElement]?> = Observable(nil)
-    var errorMessage: Observable<String?> = Observable(nil)
-    var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
-    var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
+    internal var allFruitResponse: Observable<[FruitsListModelElement]?> = Observable(nil)
+    internal var errorMessage: Observable<String?> = Observable(nil)
+    internal var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
+    internal var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
 
     var selectdCategory = Category.AllFruits
-    var soretedKeys = [String]()
     
     init(apiManager: APIManagerProtocol, navigator: HomeViewNavigatorProtocol) {
         self.apiManager = apiManager
@@ -75,11 +74,14 @@ class HomeViewModel: ObservableObject, HomeViewModelProtocol {
     }
     
     func getFruitAt(forIndex index: Int, section: Int) -> FruitsListModelElement? {
-        return self.filteredResponse.value?[section].1[index]
+        if let fruitValue = self.filteredResponse.value?[section].1[index] {
+            return fruitValue
+        }
+        return nil
     }
     
     func redirectToFruitDetails(forIndex index: Int, section: Int) {
-        if let fruitValue = self.filteredResponse.value?[section].1[index] {
+        if let fruitValue = self.getFruitAt(forIndex: index, section: section) {
             navigator?.showFruitDetails(for: fruitValue)
         }
     }
@@ -91,23 +93,23 @@ class HomeViewModel: ObservableObject, HomeViewModelProtocol {
         return ""
     }
     
-    func getFruitFamilyName(forIndex index: Int, section: Int, type: Category) -> String? {
+    func getFruitFamilyName(forIndex index: Int, section: Int) -> String? {
         if let fruitValue = self.filteredResponse.value?[section].1[index] {
-            return type == .AllFruits ? "" : fruitValue.family ?? ""
+            return fruitValue.family ?? ""
         }
         return ""
     }
     
-    func getFruitGenusName(forIndex index: Int, section: Int, type: Category) -> String? {
+    func getFruitGenusName(forIndex index: Int, section: Int) -> String? {
         if let fruitValue = self.filteredResponse.value?[section].1[index] {
-            return type == .AllFruits ? "" : fruitValue.genus ?? ""
+            return fruitValue.genus ?? ""
         }
         return ""
     }
     
-    func getFruitOrderName(forIndex index: Int, section: Int, type: Category) -> String? {
+    func getFruitOrderName(forIndex index: Int, section: Int) -> String? {
         if let fruitValue = self.filteredResponse.value?[section].1[index] {
-            return type == .AllFruits ? "" : fruitValue.order ?? ""
+            return fruitValue.order ?? ""
         }
         return ""
     }

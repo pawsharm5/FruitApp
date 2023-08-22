@@ -20,6 +20,7 @@ protocol DependencyContainerProtocol {
 }
 
 // MARK: Confirming to Resource Protocol
+/// Single Responsibility
 final class DependencyContainer: DependencyContainerProtocol {
     
     var apiManager: APIManagerProtocol

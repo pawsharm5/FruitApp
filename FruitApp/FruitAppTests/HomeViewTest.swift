@@ -58,44 +58,44 @@ final class HomeViewTest: XCTestCase {
         self.sut.viewModel.filterByFamily(type: .FruitsByOrder)
         
         XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .AllFruits), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .AllFruits), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .AllFruits), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
 
         self.sut.viewModel.allFruitResponse.value = nil
         
         XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .AllFruits), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .AllFruits), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .AllFruits), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByFamily), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByGenus), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0, type: .FruitsByOrder), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
     }
     
     func testApiData() {

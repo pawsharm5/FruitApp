@@ -91,7 +91,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.selectionStyle = .none
             cell.accessibilityIdentifier = "Cell_\(indexPath.row)"
             cell.LabelFruitName.text = self.viewModel.getFruitName(forIndex: indexPath.row, section: indexPath.section)
-            cell.LabelFruitCategory.text = self.viewModel.getFruitFamilyName(forIndex: indexPath.row, section: indexPath.section, type: self.viewModel.selectdCategory)
+            cell.LabelFamilyName.text = self.viewModel.getFruitFamilyName(forIndex: indexPath.row, section: indexPath.section)
+            cell.LabelFamilyGenus.text = self.viewModel.getFruitGenusName(forIndex: indexPath.row, section: indexPath.section)
+            cell.LabelFamilyOrder.text = self.viewModel.getFruitOrderName(forIndex: indexPath.row, section: indexPath.section)
+
             return cell
         }
         return UITableViewCell()
@@ -131,35 +134,29 @@ extension HomeViewController {
     
     @IBAction func btnCategoryClick(_ sender: UIButton) {
         self.searchBar.resignFirstResponder()
-        switch sender.tag {
-        case 0:
-            sender.backgroundColor = .blue
-            self.btnFruitByFamily.backgroundColor = .red
-            self.btnFruitByGenus.backgroundColor = .red
-            self.btnFruitByOrder.backgroundColor = .red
+        self.changeButtons(sender: sender)
+        switch Category.allCases[sender.tag] {
+        case .AllFruits:
             self.viewModel.selectdCategory = .AllFruits
-        case 1:
-            sender.backgroundColor = .blue
-            self.btnAllFruits.backgroundColor = .red
-            self.btnFruitByGenus.backgroundColor = .red
-            self.btnFruitByOrder.backgroundColor = .red
+        case .FruitsByFamily:
             self.viewModel.selectdCategory = .FruitsByFamily
-        case 2:
-            sender.backgroundColor = .blue
-            self.btnAllFruits.backgroundColor = .red
-            self.btnFruitByFamily.backgroundColor = .red
-            self.btnFruitByOrder.backgroundColor = .red
+        case .FruitsByGenus:
             self.viewModel.selectdCategory = .FruitsByGenus
-        case 3:
-            sender.backgroundColor = .blue
-            self.btnAllFruits.backgroundColor = .red
-            self.btnFruitByFamily.backgroundColor = .red
-            self.btnFruitByGenus.backgroundColor = .red
+        case .FruitsByOrder:
             self.viewModel.selectdCategory = .FruitsByOrder
-        default:
-            print("No Data")
         }
         self.viewModel.filterByFamily(type: self.viewModel.selectdCategory)
         self.tableView.reloadData()
+    }
+    
+    func changeButtons(sender:UIButton) {
+        let buttons = [self.btnAllFruits, self.btnFruitByFamily, self.btnFruitByGenus, self.btnFruitByOrder]
+        buttons.forEach({ value in
+            if sender == value {
+                sender.backgroundColor = .blue
+            } else {
+                value?.backgroundColor = .lightGray
+            }
+        })
     }
 }

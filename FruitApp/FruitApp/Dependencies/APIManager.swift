@@ -8,6 +8,7 @@
 import Foundation
 
 /// `API (Endevour & Middleware) Manager`
+///  Solid Open/Close principle
 final class APIManager {
     /// Router to call custom get/post request via Endevour
     private let serverRouter: APIRouter<ServerEndpoint>

@@ -20,9 +20,9 @@ protocol HomeViewModelProtocol {
     func searchFruit(searchText:String)
     func redirectToFruitDetails(forIndex index: Int, section:Int)
     func getFruitName(forIndex index:Int, section:Int) -> String?
-    func getFruitFamilyName(forIndex index:Int, section:Int, type:Category) -> String?
-    func getFruitGenusName(forIndex index:Int, section:Int, type:Category) -> String?
-    func getFruitOrderName(forIndex index:Int, section:Int, type:Category) -> String?
+    func getFruitFamilyName(forIndex index:Int, section:Int) -> String?
+    func getFruitGenusName(forIndex index:Int, section:Int) -> String?
+    func getFruitOrderName(forIndex index:Int, section:Int) -> String?
 }
 
 protocol HomeViewNavigatorProtocol {
@@ -34,7 +34,7 @@ enum HomeViewUIUpdateCase {
     case error(error: APIError)
 }
 
-enum Category {
+enum Category:CaseIterable {
     case AllFruits
     case FruitsByFamily
     case FruitsByGenus
