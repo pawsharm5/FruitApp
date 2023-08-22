@@ -1,6 +1,0 @@
-framework module Pods_FruitApp_FruitAppUITests {
-  umbrella header "Pods-FruitApp-FruitAppUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

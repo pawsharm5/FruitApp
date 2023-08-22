@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100A8AD82A93A7F7008CAD78 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A8AD72A93A7F7008CAD78 /* Coordinator.swift */; };
 		10D54D3E2A8E1BAC00E8B328 /* HomeViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D54D3D2A8E1BAC00E8B328 /* HomeViewUITest.swift */; };
-		10D54D402A8E1CED00E8B328 /* HomeViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D54D3F2A8E1CED00E8B328 /* HomeViewTest.swift */; };
-		22352BE76C2AF8DB2F5FE2F2 /* Pods_FruitApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0182815AF7392031A1046F38 /* Pods_FruitApp.framework */; };
-		7D1150261C1712E38D0A278A /* Pods_FruitAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */; };
-		D81813BEBC4A8FDEB894F0F3 /* Pods_FruitApp_FruitAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1D2623065F69BFBAB87B9 /* Pods_FruitApp_FruitAppUITests.framework */; };
 		F24C1AEF2A85EBEA00EC512A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */; };
 		F24C1AF62A85EBEA00EC512A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F24C1AF42A85EBEA00EC512A /* Main.storyboard */; };
 		F24C1AF82A85EBEB00EC512A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F24C1AF72A85EBEB00EC512A /* Assets.xcassets */; };
@@ -24,11 +21,26 @@
 		F24C1B2A2A85ECFA00EC512A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B292A85ECFA00EC512A /* HomeViewController.swift */; };
 		F24C1B2C2A85ED0900EC512A /* FruitDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */; };
 		F24C1B2E2A85ED2300EC512A /* FruitsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */; };
-		F24C1B302A85F88D00EC512A /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */; };
-		F24C1B322A85F8BA00EC512A /* APIRouterStructer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */; };
+		F24C1B302A85F88D00EC512A /* ApiRouterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B2F2A85F88D00EC512A /* ApiRouterHelper.swift */; };
+		F24C1B322A85F8BA00EC512A /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B312A85F8BA00EC512A /* APIRouter.swift */; };
 		F24C1B342A85F8FC00EC512A /* ConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */; };
-		F24C1B362A85F91200EC512A /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1B352A85F91200EC512A /* SessionHelper.swift */; };
-		F2D72EA92A8C9FBD00E50996 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D72EA82A8C9FBD00E50996 /* APITests.swift */; };
+		F27486CA2A946D47001C2F2F /* HomeViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27486C92A946D47001C2F2F /* HomeViewTest.swift */; };
+		F27486CC2A94776B001C2F2F /* CoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27486CB2A94776B001C2F2F /* CoordinatorTest.swift */; };
+		F27486CE2A9483F4001C2F2F /* FruitDetailViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27486CD2A9483F4001C2F2F /* FruitDetailViewTest.swift */; };
+		F296CEE82A93ADC8003AD465 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEE72A93ADC8003AD465 /* UITableViewCell+Extension.swift */; };
+		F296CEEA2A93AE53003AD465 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEE92A93AE53003AD465 /* AppCoordinator.swift */; };
+		F296CEEC2A93AE98003AD465 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEEB2A93AE98003AD465 /* NavigationController.swift */; };
+		F296CEEE2A93AF72003AD465 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEED2A93AF72003AD465 /* HomeViewCoordinator.swift */; };
+		F296CEF02A93AFAF003AD465 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEEF2A93AFAF003AD465 /* DependencyContainer.swift */; };
+		F296CEF22A93B231003AD465 /* ServerEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEF12A93B231003AD465 /* ServerEndPoint.swift */; };
+		F296CEF42A93B2D2003AD465 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEF32A93B2D2003AD465 /* APIManager.swift */; };
+		F296CEF62A93B30C003AD465 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEF52A93B30C003AD465 /* SessionManager.swift */; };
+		F296CEF82A93B3A4003AD465 /* GenrateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEF72A93B3A4003AD465 /* GenrateAPI.swift */; };
+		F296CEFA2A93B5F6003AD465 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEF92A93B5F6003AD465 /* HomeViewBuilder.swift */; };
+		F296CEFE2A93B734003AD465 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEFD2A93B734003AD465 /* HomeViewProtocol.swift */; };
+		F296CF002A93B9B0003AD465 /* FruitDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CEFF2A93B9B0003AD465 /* FruitDetailsCoordinator.swift */; };
+		F296CF022A93BA1D003AD465 /* FruitDetailsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CF012A93BA1D003AD465 /* FruitDetailsBuilder.swift */; };
+		F296CF042A93BA4C003AD465 /* FruitDetailsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296CF032A93BA4C003AD465 /* FruitDetailsProtocols.swift */; };
 		F2FFF5862A89E4B500676DCB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */; };
 		F2FFF5892A89E53500676DCB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF5882A89E53500676DCB /* Observable.swift */; };
 		F2FFF58B2A89EC2100676DCB /* FruitDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */; };
@@ -53,19 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0182815AF7392031A1046F38 /* Pods_FruitApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100A8AD72A93A7F7008CAD78 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		10D54D3D2A8E1BAC00E8B328 /* HomeViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUITest.swift; sourceTree = "<group>"; };
-		10D54D3F2A8E1CED00E8B328 /* HomeViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTest.swift; sourceTree = "<group>"; };
-		18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.debug.xcconfig"; path = "Target Support Files/Pods-FruitApp/Pods-FruitApp.debug.xcconfig"; sourceTree = "<group>"; };
-		1A43E4C45E162053759B7833 /* Pods-FruitApp-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp-FruitAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.release.xcconfig"; path = "Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		5791A234C453060ABC67AABE /* Pods-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp.release.xcconfig"; path = "Target Support Files/Pods-FruitApp/Pods-FruitApp.release.xcconfig"; sourceTree = "<group>"; };
-		8F1D287882EE12C4D8A5A084 /* Pods-FruitAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FruitAppUITests/Pods-FruitAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		BAE1D2623065F69BFBAB87B9 /* Pods_FruitApp_FruitAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitApp_FruitAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FruitAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FruitAppTests/Pods-FruitAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ECF2F1D3CA601A37B99166EC /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FruitApp-FruitAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F24C1AEB2A85EBEA00EC512A /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24C1AF52A85EBEA00EC512A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,11 +83,26 @@
 		F24C1B292A85ECFA00EC512A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsViewController.swift; sourceTree = "<group>"; };
 		F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsListModel.swift; sourceTree = "<group>"; };
-		F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
-		F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouterStructer.swift; sourceTree = "<group>"; };
+		F24C1B2F2A85F88D00EC512A /* ApiRouterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouterHelper.swift; sourceTree = "<group>"; };
+		F24C1B312A85F8BA00EC512A /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
-		F24C1B352A85F91200EC512A /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
-		F2D72EA82A8C9FBD00E50996 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		F27486C92A946D47001C2F2F /* HomeViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTest.swift; sourceTree = "<group>"; };
+		F27486CB2A94776B001C2F2F /* CoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTest.swift; sourceTree = "<group>"; };
+		F27486CD2A9483F4001C2F2F /* FruitDetailViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewTest.swift; sourceTree = "<group>"; };
+		F296CEE72A93ADC8003AD465 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		F296CEE92A93AE53003AD465 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F296CEEB2A93AE98003AD465 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		F296CEED2A93AF72003AD465 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
+		F296CEEF2A93AFAF003AD465 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		F296CEF12A93B231003AD465 /* ServerEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerEndPoint.swift; sourceTree = "<group>"; };
+		F296CEF32A93B2D2003AD465 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F296CEF52A93B30C003AD465 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		F296CEF72A93B3A4003AD465 /* GenrateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrateAPI.swift; sourceTree = "<group>"; };
+		F296CEF92A93B5F6003AD465 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		F296CEFD2A93B734003AD465 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		F296CEFF2A93B9B0003AD465 /* FruitDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsCoordinator.swift; sourceTree = "<group>"; };
+		F296CF012A93BA1D003AD465 /* FruitDetailsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsBuilder.swift; sourceTree = "<group>"; };
+		F296CF032A93BA4C003AD465 /* FruitDetailsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailsProtocols.swift; sourceTree = "<group>"; };
 		F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F2FFF5882A89E53500676DCB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewModel.swift; sourceTree = "<group>"; };
@@ -98,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22352BE76C2AF8DB2F5FE2F2 /* Pods_FruitApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D1150261C1712E38D0A278A /* Pods_FruitAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,36 +128,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81813BEBC4A8FDEB894F0F3 /* Pods_FruitApp_FruitAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C901FA221695E8A2C6632EEE /* Pods */ = {
+		100A8AD62A93A7D0008CAD78 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */,
-				633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */,
-				ECF2F1D3CA601A37B99166EC /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */,
-				1A43E4C45E162053759B7833 /* Pods-FruitApp-FruitAppUITests.release.xcconfig */,
-				E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */,
-				241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */,
-				5791A234C453060ABC67AABE /* Pods-FruitAppUITests.debug.xcconfig */,
-				8F1D287882EE12C4D8A5A084 /* Pods-FruitAppUITests.release.xcconfig */,
+				100A8AD72A93A7F7008CAD78 /* Coordinator.swift */,
+				F296CEE92A93AE53003AD465 /* AppCoordinator.swift */,
+				F296CEEB2A93AE98003AD465 /* NavigationController.swift */,
+				F296CEEF2A93AFAF003AD465 /* DependencyContainer.swift */,
+				F296CEF32A93B2D2003AD465 /* APIManager.swift */,
+				F296CEF52A93B30C003AD465 /* SessionManager.swift */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CE716C1853D0C3B49B366E27 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0182815AF7392031A1046F38 /* Pods_FruitApp.framework */,
-				D2D287564642F81F6057303B /* Pods_FruitAppTests.framework */,
-				BAE1D2623065F69BFBAB87B9 /* Pods_FruitApp_FruitAppUITests.framework */,
-			);
-			name = Frameworks;
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		F24C1AE22A85EBEA00EC512A = {
@@ -153,8 +154,6 @@
 				F24C1B042A85EBEC00EC512A /* FruitAppTests */,
 				F24C1B0E2A85EBEC00EC512A /* FruitAppUITests */,
 				F24C1AEC2A85EBEA00EC512A /* Products */,
-				C901FA221695E8A2C6632EEE /* Pods */,
-				CE716C1853D0C3B49B366E27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,10 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */,
-				F2FFF5872A89E51F00676DCB /* Utility */,
+				100A8AD62A93A7D0008CAD78 /* Dependencies */,
+				F2FFF5872A89E51F00676DCB /* Extensions */,
 				F24C1B282A85ECCB00EC512A /* ApiManager */,
-				F24C1B272A85ECC000EC512A /* ViewModels */,
-				F24C1B262A85ECBB00EC512A /* Models */,
 				F24C1B212A85EC2700EC512A /* CustomView */,
 				F24C1B1E2A85EBF600EC512A /* Controllers */,
 				F24C1AF42A85EBEA00EC512A /* Main.storyboard */,
@@ -190,8 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				F24C1B052A85EBEC00EC512A /* FruitAppTests.swift */,
-				F2D72EA82A8C9FBD00E50996 /* APITests.swift */,
-				10D54D3F2A8E1CED00E8B328 /* HomeViewTest.swift */,
+				F27486C92A946D47001C2F2F /* HomeViewTest.swift */,
+				F27486CD2A9483F4001C2F2F /* FruitDetailViewTest.swift */,
+				F27486CB2A94776B001C2F2F /* CoordinatorTest.swift */,
 			);
 			path = FruitAppTests;
 			sourceTree = "<group>";
@@ -219,6 +218,11 @@
 			isa = PBXGroup;
 			children = (
 				F24C1B292A85ECFA00EC512A /* HomeViewController.swift */,
+				F296CEED2A93AF72003AD465 /* HomeViewCoordinator.swift */,
+				F296CEF92A93B5F6003AD465 /* HomeViewBuilder.swift */,
+				F296CEFD2A93B734003AD465 /* HomeViewProtocol.swift */,
+				F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */,
+				F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -227,6 +231,10 @@
 			isa = PBXGroup;
 			children = (
 				F24C1B2B2A85ED0900EC512A /* FruitDetailsViewController.swift */,
+				F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */,
+				F296CEFF2A93B9B0003AD465 /* FruitDetailsCoordinator.swift */,
+				F296CF012A93BA1D003AD465 /* FruitDetailsBuilder.swift */,
+				F296CF032A93BA4C003AD465 /* FruitDetailsProtocols.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -240,41 +248,26 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
-		F24C1B262A85ECBB00EC512A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F24C1B2D2A85ED2300EC512A /* FruitsListModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		F24C1B272A85ECC000EC512A /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F2FFF5852A89E4B500676DCB /* HomeViewModel.swift */,
-				F2FFF58A2A89EC2100676DCB /* FruitDetailViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		F24C1B282A85ECCB00EC512A /* ApiManager */ = {
 			isa = PBXGroup;
 			children = (
-				F24C1B2F2A85F88D00EC512A /* ApiRouter.swift */,
-				F24C1B312A85F8BA00EC512A /* APIRouterStructer.swift */,
+				F24C1B2F2A85F88D00EC512A /* ApiRouterHelper.swift */,
+				F24C1B312A85F8BA00EC512A /* APIRouter.swift */,
 				F24C1B332A85F8FC00EC512A /* ConnectionSettings.swift */,
-				F24C1B352A85F91200EC512A /* SessionHelper.swift */,
+				F296CEF12A93B231003AD465 /* ServerEndPoint.swift */,
+				F296CEF72A93B3A4003AD465 /* GenrateAPI.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
 		};
-		F2FFF5872A89E51F00676DCB /* Utility */ = {
+		F2FFF5872A89E51F00676DCB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F2FFF5882A89E53500676DCB /* Observable.swift */,
 				F2FFF58C2A89F47B00676DCB /* Extensions.swift */,
+				F296CEE72A93ADC8003AD465 /* UITableViewCell+Extension.swift */,
 			);
-			path = Utility;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +277,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F24C1B152A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitApp" */;
 			buildPhases = (
-				088E9D97AFA740C9E7634594 /* [CP] Check Pods Manifest.lock */,
 				F24C1AE72A85EBEA00EC512A /* Sources */,
 				F24C1AE82A85EBEA00EC512A /* Frameworks */,
 				F24C1AE92A85EBEA00EC512A /* Resources */,
-				9410B3CFF2124BE685696FF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,7 +294,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F24C1B182A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppTests" */;
 			buildPhases = (
-				522B8E2D7A77DF983AB03F7F /* [CP] Check Pods Manifest.lock */,
 				F24C1AFD2A85EBEC00EC512A /* Sources */,
 				F24C1AFE2A85EBEC00EC512A /* Frameworks */,
 				F24C1AFF2A85EBEC00EC512A /* Resources */,
@@ -322,11 +312,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F24C1B1B2A85EBEC00EC512A /* Build configuration list for PBXNativeTarget "FruitAppUITests" */;
 			buildPhases = (
-				76C757C7221BF086BF36FE6F /* [CP] Check Pods Manifest.lock */,
 				F24C1B072A85EBEC00EC512A /* Sources */,
 				F24C1B082A85EBEC00EC512A /* Frameworks */,
 				F24C1B092A85EBEC00EC512A /* Resources */,
-				5264DAFB2C5A4E5BAB097126 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,109 +397,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		088E9D97AFA740C9E7634594 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		522B8E2D7A77DF983AB03F7F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5264DAFB2C5A4E5BAB097126 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruitApp-FruitAppUITests/Pods-FruitApp-FruitAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76C757C7221BF086BF36FE6F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FruitApp-FruitAppUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9410B3CFF2124BE685696FF0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FruitApp/Pods-FruitApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		F24C1AE72A85EBEA00EC512A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -519,17 +404,31 @@
 			files = (
 				F24C1B2E2A85ED2300EC512A /* FruitsListModel.swift in Sources */,
 				F2FFF5862A89E4B500676DCB /* HomeViewModel.swift in Sources */,
-				F24C1B322A85F8BA00EC512A /* APIRouterStructer.swift in Sources */,
+				F296CEEA2A93AE53003AD465 /* AppCoordinator.swift in Sources */,
+				F296CF042A93BA4C003AD465 /* FruitDetailsProtocols.swift in Sources */,
+				100A8AD82A93A7F7008CAD78 /* Coordinator.swift in Sources */,
+				F296CF002A93B9B0003AD465 /* FruitDetailsCoordinator.swift in Sources */,
+				F24C1B322A85F8BA00EC512A /* APIRouter.swift in Sources */,
 				F24C1B242A85ECA600EC512A /* FruitListTblCell.swift in Sources */,
+				F296CEF42A93B2D2003AD465 /* APIManager.swift in Sources */,
+				F296CEF02A93AFAF003AD465 /* DependencyContainer.swift in Sources */,
+				F296CEE82A93ADC8003AD465 /* UITableViewCell+Extension.swift in Sources */,
 				F2FFF5892A89E53500676DCB /* Observable.swift in Sources */,
+				F296CEF62A93B30C003AD465 /* SessionManager.swift in Sources */,
 				F24C1AEF2A85EBEA00EC512A /* AppDelegate.swift in Sources */,
 				F24C1B2C2A85ED0900EC512A /* FruitDetailsViewController.swift in Sources */,
-				F24C1B362A85F91200EC512A /* SessionHelper.swift in Sources */,
+				F296CEF82A93B3A4003AD465 /* GenrateAPI.swift in Sources */,
 				F24C1B2A2A85ECFA00EC512A /* HomeViewController.swift in Sources */,
-				F24C1B302A85F88D00EC512A /* ApiRouter.swift in Sources */,
+				F296CEEE2A93AF72003AD465 /* HomeViewCoordinator.swift in Sources */,
+				F296CEEC2A93AE98003AD465 /* NavigationController.swift in Sources */,
+				F296CEF22A93B231003AD465 /* ServerEndPoint.swift in Sources */,
+				F296CEFA2A93B5F6003AD465 /* HomeViewBuilder.swift in Sources */,
+				F24C1B302A85F88D00EC512A /* ApiRouterHelper.swift in Sources */,
 				F2FFF58B2A89EC2100676DCB /* FruitDetailViewModel.swift in Sources */,
 				F24C1B342A85F8FC00EC512A /* ConnectionSettings.swift in Sources */,
 				F2FFF58D2A89F47B00676DCB /* Extensions.swift in Sources */,
+				F296CEFE2A93B734003AD465 /* HomeViewProtocol.swift in Sources */,
+				F296CF022A93BA1D003AD465 /* FruitDetailsBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,9 +436,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D72EA92A8C9FBD00E50996 /* APITests.swift in Sources */,
-				10D54D402A8E1CED00E8B328 /* HomeViewTest.swift in Sources */,
+				F27486CE2A9483F4001C2F2F /* FruitDetailViewTest.swift in Sources */,
 				F24C1B062A85EBEC00EC512A /* FruitAppTests.swift in Sources */,
+				F27486CC2A94776B001C2F2F /* CoordinatorTest.swift in Sources */,
+				F27486CA2A946D47001C2F2F /* HomeViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +604,6 @@
 		};
 		F24C1B162A85EBEC00EC512A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 18C753A1BB6B30B61FE47A92 /* Pods-FruitApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -725,13 +624,9 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
-					"\"Alamofire\"",
-					"-framework",
 					"\"CFNetwork\"",
 					"-framework",
 					"\"Foundation\"",
-					"-framework",
-					"\"PromiseKit\"",
 					"-framework",
 					"\"UIKit\"",
 					"$(inherited)",
@@ -749,7 +644,6 @@
 		};
 		F24C1B172A85EBEC00EC512A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 633FD65A96A9FCC77122A411 /* Pods-FruitApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -780,7 +674,6 @@
 		};
 		F24C1B192A85EBEC00EC512A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E29B6ACA9B89A9861794AE88 /* Pods-FruitAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -800,7 +693,6 @@
 		};
 		F24C1B1A2A85EBEC00EC512A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 241BA4782EDEE7B48A40A82F /* Pods-FruitAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -820,7 +712,6 @@
 		};
 		F24C1B1C2A85EBEC00EC512A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECF2F1D3CA601A37B99166EC /* Pods-FruitApp-FruitAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -838,7 +729,6 @@
 		};
 		F24C1B1D2A85EBEC00EC512A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A43E4C45E162053759B7833 /* Pods-FruitApp-FruitAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

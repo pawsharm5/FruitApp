@@ -6,17 +6,35 @@
 //
 
 import Foundation
-import Alamofire
+import SystemConfiguration
 
-struct ConnectionSettings { }
-
-extension ConnectionSettings {
-    static func sessionManager() -> Session {
-        let configuration = URLSessionConfiguration.default
-        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
-        configuration.urlCache = nil
+// MARK: Network Reachability Check
+struct ConnectionSettings {
+    /// checks if network is connected or not
+    static var isConnected: Bool {
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+        zeroAddress.sin_family = sa_family_t(AF_INET)
         
-        let sessionManager = Session(configuration: configuration, startRequestsImmediately: false)
-        return sessionManager
+        guard let defaultRouteReachability = withUnsafePointer(to: &zeroAddress, {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
+            }
+        }) else {
+            return false
+        }
+        
+        var flags: SCNetworkReachabilityFlags = []
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return false
+        }
+        if flags.isEmpty {
+            return false
+        }
+        
+        let isReachable = flags.contains(.reachable)
+        let needsConnection = flags.contains(.connectionRequired)
+        
+        return (isReachable && !needsConnection)
     }
 }

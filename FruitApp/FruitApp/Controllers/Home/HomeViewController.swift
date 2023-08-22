@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import PromiseKit
-import Alamofire
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -17,9 +15,21 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var btnFruitByGenus: UIButton!
     @IBOutlet weak var btnFruitByOrder: UIButton!
 
+    private(set) var viewModel:HomeViewModelProtocol
+    private var resonseAvailabel = false
     
-    var viewModel = HomeViewModel()
-    var resonseAvailabel = false
+    // MARK: Initializers
+
+    init?(coder: NSCoder,
+          viewModel: HomeViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(coder: coder)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("You must create this view controller.")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,10 +42,16 @@ class HomeViewController: UIViewController {
     func setupUI() {
         self.tableView.separatorStyle = .none
         let fruitListTblCell = UINib(nibName: "FruitListTblCell", bundle: nil)
-        self.tableView.register(fruitListTblCell, forCellReuseIdentifier: "FruitListTblCell")
+        self.tableView.register(fruitListTblCell, forCellReuseIdentifier: FruitListTblCell.cellIdentifier)
+        
+        self.btnAllFruits.addShadow()
+        self.btnFruitByFamily.addShadow()
+        self.btnFruitByGenus.addShadow()
+        self.btnFruitByOrder.addShadow()
     }
     
     func bindData() {
+        self.viewModel.selectdCategory = .AllFruits
         self.viewModel.getAllFruits()
         
         self.viewModel.errorMessage.bind { [weak self] in
@@ -71,36 +87,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return self.viewModel.filteredResponse.value?[section].0.description ?? ""
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FruitListTblCell", for: indexPath) as! FruitListTblCell
-        cell.selectionStyle = .none
-        cell.accessibilityIdentifier = "Cell_\(indexPath.row)"
-        var dataV:FruitsListModelElement?
-        switch self.viewModel.selectdCategory {
-        case .AllFruits:
-            dataV = self.viewModel.filteredResponse.value?[indexPath.section].1[indexPath.row]
-            cell.setUpData(name: dataV?.name ?? "", typeName: "")
-        case .FruitsByFamily, .FruitsByGenus, .FruitsByOrder:
-            dataV = self.viewModel.filteredResponse.value?[indexPath.section].1[indexPath.row]
-            cell.setUpData(name: dataV?.name ?? "", typeName: dataV?.family ?? "")
+        if let cell = tableView.dequeueReusableCell(withIdentifier: FruitListTblCell.cellIdentifier, for: indexPath) as? FruitListTblCell {
+            cell.selectionStyle = .none
+            cell.accessibilityIdentifier = "Cell_\(indexPath.row)"
+            cell.LabelFruitName.text = self.viewModel.getFruitName(forIndex: indexPath.row, section: indexPath.section)
+            cell.LabelFruitCategory.text = self.viewModel.getFruitFamilyName(forIndex: indexPath.row, section: indexPath.section, type: self.viewModel.selectdCategory)
+            return cell
         }
-        
-        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var dataV:FruitsListModelElement?
-        switch self.viewModel.selectdCategory {
-        case .AllFruits:
-            dataV = self.viewModel.filteredResponse.value?[indexPath.section].1[indexPath.row]
-        case .FruitsByFamily, .FruitsByGenus, .FruitsByOrder:
-            dataV = self.viewModel.filteredResponse.value?[indexPath.section].1[indexPath.row]
-        }
-        let storyboard = UIStoryboard(storyboard: .Main)
-        let destination:FruitDetailsViewController = storyboard.instantiateViewController()
-        let VM = FruitDetailViewModel.init()
-        VM.fruitData = dataV
-        destination.viewModel = VM
-        self.navigationController?.pushViewController(destination, animated: true)
+        self.viewModel.redirectToFruitDetails(forIndex: indexPath.row, section: indexPath.section)
     }
 }
 
@@ -112,7 +110,7 @@ extension HomeViewController: UISearchBarDelegate {
                 searchBar.resignFirstResponder()
             })
         }
-        if searchText.count > 2 {
+        if searchText.count > 0 {
             self.resonseAvailabel = false
             self.tableView.reloadData()
             self.viewModel.searchFruit(searchText: searchText)
@@ -120,7 +118,7 @@ extension HomeViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        if searchBar.text?.count ?? 0 > 2 {
+        if searchBar.text?.count ?? 0 > 0 {
             self.resonseAvailabel = false
             self.tableView.reloadData()
             self.viewModel.searchFruit(searchText: searchBar.text ?? "")
@@ -135,12 +133,28 @@ extension HomeViewController {
         self.searchBar.resignFirstResponder()
         switch sender.tag {
         case 0:
+            sender.backgroundColor = .blue
+            self.btnFruitByFamily.backgroundColor = .red
+            self.btnFruitByGenus.backgroundColor = .red
+            self.btnFruitByOrder.backgroundColor = .red
             self.viewModel.selectdCategory = .AllFruits
         case 1:
+            sender.backgroundColor = .blue
+            self.btnAllFruits.backgroundColor = .red
+            self.btnFruitByGenus.backgroundColor = .red
+            self.btnFruitByOrder.backgroundColor = .red
             self.viewModel.selectdCategory = .FruitsByFamily
         case 2:
+            sender.backgroundColor = .blue
+            self.btnAllFruits.backgroundColor = .red
+            self.btnFruitByFamily.backgroundColor = .red
+            self.btnFruitByOrder.backgroundColor = .red
             self.viewModel.selectdCategory = .FruitsByGenus
         case 3:
+            sender.backgroundColor = .blue
+            self.btnAllFruits.backgroundColor = .red
+            self.btnFruitByFamily.backgroundColor = .red
+            self.btnFruitByGenus.backgroundColor = .red
             self.viewModel.selectdCategory = .FruitsByOrder
         default:
             print("No Data")

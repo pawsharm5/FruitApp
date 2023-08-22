@@ -55,13 +55,6 @@ final class HomeViewUITest: XCTestCase {
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Kiwi"]/*[[".cells.matching(identifier: \"Cell_0\").staticTexts[\"Kiwi\"]",".staticTexts[\"Kiwi\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         welcomeToFruitsAppButton.tap()
         searchFruitsSearchField.tap()
-//        searchFruitsSearchField.buttons["Clear text"].tap()
-        tablesQuery.staticTexts["Bromeliaceae"].swipeUp()
-        tablesQuery.staticTexts["Caricaceae"].swipeDown()
-        
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        //Screen recording
         
     }
 }

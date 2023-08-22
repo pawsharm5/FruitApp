@@ -1,92 +1,140 @@
 //
-//  ApiRouter.swift
+//  APIRouterStructer.swift
 //  FruitApp
 //
 //  Created by Pawan Sharma on 11/08/23.
 //
 
 import Foundation
-import Alamofire
-enum APIRouter {
-    
-    // MARK: - Endpoints
-    case getAllFruit
-    
-    var baseURL: String {
-        return AppEnvironement.baseURL.absoluteString
-    }
-    
-    var method: HTTPMethod {
-        switch self {
-        case .getAllFruit: return .get
-        }
-    }
-    
-    var path: String {
-        switch self {
-        case .getAllFruit:
-            return "fruit/all"
-        }
-    }
-    
-    var encoding: ParameterEncoding {
-        switch method {
-        default: return URLEncoding.default
-        }
-    }
-    
-    var paramters: Parameters? {
-        switch self {
-        case .getAllFruit: return nil
-        }
-    }
-    
-    var body: Parameters? {
-        switch self {
-        case .getAllFruit: return nil
-        }
-    }
-    
-    /* future use if any
-    var additionalHeaders: HTTPHeaders? {
-        switch self {
-        case .getAllFruit: return nil
-        case .addNewFruit: return nil
-        }
-    }
-    */
-    var timeout: TimeInterval {
-        switch self {
-        default: return 20
-        }
-    }
-}
 
-enum AppEnvironement {
-    case production
-    case development
-}
-
-extension AppEnvironement {
-    static var currentState: AppEnvironement {
-        return .development
+// MARK: - API Request Router -
+final class APIRouter<EndPoint: EndPointType> {
+    private var task: URLSessionTask?
+    
+    typealias JSONTaskCompletionHandler = (Decodable?, APIError?) -> Void
+    
+    /// `initializer`
+    init() {
     }
-}
-
-//swiftlint:disable force_unwrapping
-extension AppEnvironement {
-    static var baseURL: URL {
-        switch AppEnvironement.currentState {
-        case .production:
-            return URL(string: Servers.production)!
-        case .development:
-            return URL(string: Servers.development)!
+    
+    /// Build API Request
+    /// - Parameters:
+    ///   - route: End Point
+    ///   - decode: T (custom model class) as Decodable
+    ///   - completion: data, response & error
+    func request<T: Decodable>(_ route: EndPoint,
+                               decode: @escaping (Decodable) -> T?,
+                               completion: @escaping (Result<T, APIError>) -> Void) {
+        
+        guard ConnectionSettings.isConnected else {
+            completion(.failure(.unreachable))
+            return
         }
+        
+        var components = URLComponents()
+        components.scheme = route.scheme
+        components.host = route.baseURL
+        components.path = route.path
+        components.queryItems = route.parameters
+        
+        guard let url = components.url else {
+            completion(.failure(.somethingWentWrong))
+            return
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = route.httpMethod.rawValue
+        urlRequest.httpBody = route.data
+        
+        var headers = route.headers ?? []
+        
+        headers.forEach { urlRequest.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
+#if DEBUG
+        print(urlRequest)
+#endif
+        self.task = decodingTask(with: urlRequest, decodingType: T.self) { [weak self] (json, error) in
+            
+            DispatchQueue.main.async {
+                if error != nil && error == APIError.unauthorized {
+                    
+                    return
+                }
+                guard let json = json else {
+                    completion(error != nil ?
+                        .failure(.responseUnsuccessful(description: error!.description)) :
+                            .failure(.somethingWentWrong))
+                    return
+                }
+                guard let value = decode(json) else {
+                    completion(.failure(.jsonDecodingFailure))
+                    return
+                }
+                completion(.success(value))
+            }
+        }
+        
+        self.task?.resume()
     }
-}
-
-struct Servers {
-    /** In Real World: Change this later to production url */
-    static let production = "https://www.fruityvice.com/api/"
-    static let development = "https://www.fruityvice.com/api/"
+    
+    /// Request cancellation
+    func cancel() {
+        self.task?.cancel()
+    }
+    
+    // MARK: - Parsing response
+    private func decodingTask<T: Decodable>(with request: URLRequest, decodingType: T.Type, completionHandler completion: @escaping JSONTaskCompletionHandler) -> URLSessionDataTask {
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            guard let httpResponse = response as? HTTPURLResponse else {
+                completion(nil, .requestFailed(description: error?.localizedDescription ?? "## Request Fail"))
+                return
+            }
+            
+            if httpResponse.statusCode == 401 {
+                completion(nil, .unauthorized)
+                return
+            }
+            
+            if httpResponse.statusCode == 204 ||
+                httpResponse.statusCode == 202 {
+                completion(EmptyData(), nil)
+                return
+            }
+            
+            guard let data = data else {
+                completion(nil, .somethingWentWrong)
+                return
+            }
+#if DEBUG
+            print(request.url as Any)
+#endif
+            var errorData: APIErrorResponseModel?
+            do {
+                errorData = try JSONDecoder().decode(APIErrorResponseModel.self, from: data)
+            } catch {}
+            
+            if errorData != nil {
+                completion(nil, .custom(model: errorData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+#if DEBUG
+                
+                let genericModel = try! decoder.decode(decodingType, from: data)
+                
+#else
+                let genericModel = try decoder.decode(decodingType, from: data)
+#endif
+                
+                completion(genericModel, nil)
+                
+            }
+        }
+        return task
+    }
 }

@@ -20,9 +20,4 @@ class FruitListTblCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func setUpData(name:String, typeName:String) {
-        self.LabelFruitName.text = name
-        self.LabelFruitCategory.text = typeName
-    }
 }

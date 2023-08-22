@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import PromiseKit
 
 @testable import FruitApp
 
