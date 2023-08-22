@@ -8,10 +8,10 @@ https://www.fruityvice.com
 
 Used things
 1) MVVM with Clean Architecture with DependencyInjection 
-2) Scalble Apis 
+2) Scalable Apis 
 3) Unit Test cases
 4) UI Test recordings
 5) 79.6% Code-Coverage
 6) Coordinator pattern
-
+7) UI Improved
 
