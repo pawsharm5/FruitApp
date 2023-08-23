@@ -34,7 +34,7 @@ final class FruitDetailViewTest: XCTestCase {
     func makeSUT() -> FruitDetailsViewController {
         let destination = StoryboardScene.Main.fruitDetails.instantiate { coder in
             let dependacies = DependenciesAllocator.allocate()
-            let viewModel = FruitDetailViewModel(apiManager: dependacies.apiManager, navigator: FakeDetailViewNavigator(), fruitData: self.mokeBlankFruitArray.first!)
+            let viewModel = FruitDetailViewModel(navigator: FakeDetailViewNavigator(), useCase: DetailUseCase(repo: Repository(service: Services(apiManager: dependacies.apiManager), mapper: FruitsListMapper())), fruitId: "52")
             return FruitDetailsViewController(coder: coder, viewModel: viewModel)
         }
         destination.loadViewIfNeeded()
@@ -43,5 +43,9 @@ final class FruitDetailViewTest: XCTestCase {
     
     func testBlankData() {
         self.sut.viewDidLoad()
+    }
+    
+    func testBackButton() {
+        self.sut.navigationController?.popViewController(animated: true)
     }
 }

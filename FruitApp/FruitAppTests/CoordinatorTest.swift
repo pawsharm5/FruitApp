@@ -12,8 +12,9 @@ class Coordinator_Tests: XCTestCase {
     func test_When_App_Start() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let dependacies = DependenciesAllocator.allocate()
+        let navigationController: AppNavigationControllerProtocol = AppNavigationController()
         window.makeKeyAndVisible()
-        let appCoordinator = AppCoordinator(window: window, dependencies: dependacies)
+        let appCoordinator = AppCoordinator(window: window, dependencies: dependacies, navigationController: navigationController)
         appCoordinator.start()
     }
     

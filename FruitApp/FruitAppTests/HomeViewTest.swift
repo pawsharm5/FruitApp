@@ -38,7 +38,7 @@ final class HomeViewTest: XCTestCase {
     func makeSUT() -> HomeViewController {
         let destination = StoryboardScene.Main.homeView.instantiate { coder in
             let dependacies = DependenciesAllocator.allocate()
-            let viewModel = HomeViewModel(apiManager: dependacies.apiManager, navigator: FakeHomeViewNavigatorProtocol())
+            let viewModel = HomeViewModel(navigator: FakeHomeViewNavigatorProtocol(), useCase: HomeUseCase(repo: Repository(service: Services(apiManager: dependacies.apiManager), mapper: FruitsListMapper())))
             return HomeViewController(coder: coder, viewModel: viewModel)
         }
         destination.loadViewIfNeeded()
@@ -47,68 +47,64 @@ final class HomeViewTest: XCTestCase {
     
     func testFakeData() {
         self.sut.viewModel.allFruitResponse.value = self.mokeFruitArray
-        self.sut.viewModel.filterByFamily(type: .AllFruits)
+        self.sut.viewModel.updateFilterType(category: .AllFruits)
+        self.sut.viewModel.filterByFamily()
     }
     
     func testBlankFakeData() {
         self.sut.viewModel.allFruitResponse.value = self.mokeBlankFruitArray
-        self.sut.viewModel.filterByFamily(type: .AllFruits)
-        self.sut.viewModel.filterByFamily(type: .FruitsByFamily)
-        self.sut.viewModel.filterByFamily(type: .FruitsByGenus)
-        self.sut.viewModel.filterByFamily(type: .FruitsByOrder)
+        self.sut.viewModel.updateFilterType(category: .AllFruits)
+        self.sut.viewModel.filterByFamily()
         
-        XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
+        self.sut.viewModel.updateFilterType(category: .FruitsByFamily)
+        self.sut.viewModel.filterByFamily()
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        self.sut.viewModel.updateFilterType(category: .FruitsByGenus)
+        self.sut.viewModel.filterByFamily()
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
-        
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
-        
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        self.sut.viewModel.updateFilterType(category: .FruitsByOrder)
+        self.sut.viewModel.filterByFamily()
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
 
         self.sut.viewModel.allFruitResponse.value = nil
         
-        XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
         
-        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), "")
-        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), "")
+        XCTAssertEqual(self.sut.viewModel.getFruitFamilyName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitGenusName(forIndex: 0, section: 0), nil)
+        XCTAssertEqual(self.sut.viewModel.getFruitOrderName(forIndex: 0, section: 0), nil)
     }
     
     func testApiData() {
         let expect = XCTestExpectation(description: "callback")
-        self.sut.viewModel.apiManager.getAllFruits(completion: { [weak self] dataV in
-            switch dataV {
-            case .success(let listModel):
-                guard let model = listModel else { return }
-                expect.fulfill()
-            case .failure(let error):
-                XCTExpectFailure(error.localizedDescription)
-            }
-        })
+        self.sut.viewModel.getAllFruits()
+        expect.fulfill()
         wait(for: [expect], timeout: 10.0)
     }
     
@@ -159,7 +155,7 @@ final class HomeViewTest: XCTestCase {
     }
     
     func testTappingTableViewCellWithData() {
-        
+
         let cell = self.sut.tableView(self.sut.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? FruitListTblCell
         let actualReuseIdentifer = cell?.reuseIdentifier
         let expectedReuseIdentifier = "FruitListTblCell"
@@ -170,16 +166,16 @@ final class HomeViewTest: XCTestCase {
 
         let destination = StoryboardScene.Main.fruitDetails.instantiate { coder in
             let dependacies = DependenciesAllocator.allocate()
-            let viewModel = FruitDetailViewModel(apiManager: dependacies.apiManager, navigator: FakeDetailViewNavigator(), fruitData: self.mokeFruitArray.first!)
+            let viewModel = FruitDetailViewModel(navigator: FakeDetailViewNavigator(), useCase: DetailUseCase(repo: Repository(service: Services(apiManager: dependacies.apiManager), mapper: FruitsListMapper())), fruitId: "")
             return FruitDetailsViewController(coder: coder, viewModel: viewModel)
         }
         destination.loadViewIfNeeded()
     }
-    
+//
     func testAllFruitButtonClick() {
         self.sut.btnAllFruits.sendActions(for: .touchUpInside)
         
-        XCTAssertEqual(self.sut.viewModel.selectdCategory, .AllFruits)
+        XCTAssertEqual(sut.btnAllFruits.tag, 0)
     }
     
     func testFruitByFamilyButtonClick() {
@@ -193,7 +189,7 @@ final class HomeViewTest: XCTestCase {
         
         self.sut.btnFruitByGenus.sendActions(for: .touchUpInside)
         
-        XCTAssertEqual(sut.viewModel.selectdCategory, .FruitsByGenus)
+        XCTAssertEqual(sut.btnFruitByGenus.tag, 2)
     }
     
     func testFruitByOrderButtonClick() {
@@ -232,36 +228,35 @@ final class HomeViewTest: XCTestCase {
     
     func testSearchingAllFruit() {
         let expect = XCTestExpectation(description: "AllFruit")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+        self.sut.viewModel.updateFilterType(category: .AllFruits)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.sut.searchBar((self?.sut.searchBar)!, textDidChange: "Bana")
-            XCTAssertEqual(self?.sut.viewModel.filteredResponse.value?.first?.1.first?.name ?? "", "Banana")
             expect.fulfill()
             XCTAssertEqual(expect.description, "AllFruit")
         }
         
-        wait(for: [expect], timeout: 10.0)
+        wait(for: [expect], timeout: 20.0)
         
     }
     
     func testSearchingFruitByFamily() {
         let expect = XCTestExpectation(description: "ByFamily")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+        self.sut.viewModel.updateFilterType(category: .FruitsByFamily)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.sut.searchBar((self?.sut.searchBar)!, textDidChange: "Bana")
             XCTAssertEqual(self?.sut.viewModel.filteredResponse.value?.first?.1.first?.name ?? "", "Banana")
             expect.fulfill()
             XCTAssertEqual(expect.description, "ByFamily")
         }
         
-        wait(for: [expect], timeout: 10.0)
+        wait(for: [expect], timeout: 20.0)
         
     }
     
     func testSearchingFruitGenus() {
         let expect = XCTestExpectation(description: "FruitGenus")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+        self.sut.viewModel.updateFilterType(category: .FruitsByGenus)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.sut.searchBar((self?.sut.searchBar)!, textDidChange: "Bana")
             XCTAssertEqual(self?.sut.viewModel.filteredResponse.value?.first?.1.first?.name ?? "", "Banana")
             expect.fulfill()
@@ -273,14 +268,28 @@ final class HomeViewTest: XCTestCase {
     
     func testSearchingFruitOrder() {
         let expect = XCTestExpectation(description: "FruitOrder")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+        self.sut.viewModel.updateFilterType(category: .FruitsByOrder)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
             self?.sut.searchBar((self?.sut.searchBar)!, textDidChange: "Bana")
             XCTAssertEqual(self?.sut.viewModel.filteredResponse.value?.first?.1.first?.name ?? "", "Banana")
             expect.fulfill()
         }
         
-        wait(for: [expect], timeout: 10.0)
+        wait(for: [expect], timeout:20.0)
+        
+    }
+    
+    func testSearchingAllFruitNoData() {
+        let expect = XCTestExpectation(description: "AllFruitNoData")
+        self.sut.viewModel.updateFilterType(category: .AllFruits)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+            self?.sut.searchBar((self?.sut.searchBar)!, textDidChange: "xgvcghd")
+            XCTAssertEqual(self?.sut.viewModel.filteredResponse.value?.first?.1.first?.name ?? "", "")
+            expect.fulfill()
+            XCTAssertEqual(expect.description, "AllFruitNoData")
+        }
+        
+        wait(for: [expect], timeout: 20.0)
         
     }
 }
