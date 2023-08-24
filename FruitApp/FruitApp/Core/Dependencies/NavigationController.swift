@@ -108,7 +108,6 @@ extension AppNavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         if let coordinator = navigationController.topViewController?.transitionCoordinator {
             coordinator.notifyWhenInteractionChanges { (context) in
-                print("Is cancelled: \(context.isCancelled)")
                 if !context.isCancelled {
                     /* NotificationCenter.default.post(name: .swipeBack, object: nil) */
                 }

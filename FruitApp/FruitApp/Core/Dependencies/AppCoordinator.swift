@@ -35,7 +35,6 @@ final class AppCoordinator: AppCoordinatorProtocol {
 
     /// start the flow
     func start() {
-        print(Environment.serverURL)
         showFruitList()
     }
 }

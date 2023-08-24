@@ -22,7 +22,7 @@ final class Repository: RepositoryInferface {
             switch resultV {
             case .success(let model):
                 let mapData = self.mapper.fromDataToDomainModel(dataModel: (model)!)
-                completion(mapData as! FruitListDomainModel)
+                completion(mapData as? FruitListDomainModel)
             case .failure(let error):
                 failure(error)
             }

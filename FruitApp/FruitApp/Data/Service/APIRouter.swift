@@ -49,9 +49,7 @@ final class APIRouter<EndPoint: EndPointType> {
         var headers = route.headers ?? []
         
         headers.forEach { urlRequest.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
-#if DEBUG
-        print(urlRequest)
-#endif
+
         self.task = decodingTask(with: urlRequest, decodingType: T.self) { [weak self] (json, error) in
             
             DispatchQueue.main.async {
@@ -106,9 +104,6 @@ final class APIRouter<EndPoint: EndPointType> {
                 completion(nil, .somethingWentWrong)
                 return
             }
-#if DEBUG
-            print(request.url as Any)
-#endif
             var errorData: APIErrorResponseModel?
             do {
                 errorData = try JSONDecoder().decode(APIErrorResponseModel.self, from: data)

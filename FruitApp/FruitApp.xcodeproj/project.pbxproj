@@ -208,6 +208,7 @@
 		F24C1AED2A85EBEA00EC512A /* FruitApp */ = {
 			isa = PBXGroup;
 			children = (
+				F27039B32A94FD19003D92EA /* Fonts */,
 				F27039AF2A94FCE4003D92EA /* Core */,
 				F27039B02A94FCE9003D92EA /* Data */,
 				F27039B12A94FCED003D92EA /* Domain */,
@@ -257,7 +258,6 @@
 				100A8AD62A93A7D0008CAD78 /* Dependencies */,
 				F27039CF2A94FDD9003D92EA /* Helper */,
 				F27039CC2A94FD72003D92EA /* Utility */,
-				F27039B32A94FD19003D92EA /* Fonts */,
 			);
 			path = Core;
 			sourceTree = "<group>";

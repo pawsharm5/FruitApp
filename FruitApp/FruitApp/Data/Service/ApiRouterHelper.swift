@@ -122,7 +122,6 @@ struct EmptyData: Codable {
             let data = try encoder.encode(self)
             return data
         } catch {
-            print("Data encoding failed")
         }
         return nil
     }
