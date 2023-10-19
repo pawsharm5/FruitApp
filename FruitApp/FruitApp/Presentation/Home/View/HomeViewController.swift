@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var btnFruitByGenus: UIButton!
     @IBOutlet weak var btnFruitByOrder: UIButton!
 
-    private(set) var viewModel:HomeViewModelProtocol
+    private var viewModel:HomeViewModelProtocol
     private var resonseAvailabel = false
     
     // MARK: Initializers

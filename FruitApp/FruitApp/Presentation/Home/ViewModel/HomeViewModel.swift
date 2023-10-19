@@ -8,12 +8,10 @@
 import Foundation
 
 protocol HomeViewModelProtocol: AnyObject {
-    var useCase: HomeUseCase { get set }
-    var navigator: HomeViewNavigatorProtocol { get set }
-    var allFruitResponse: Observable<[FruitsListModelElement]?> {get set}
-    var errorMessage: Observable<String?> {get set}
-    var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> { get set }
-    var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> { get set }
+    var allFruitResponse: Observable<[FruitsListModelElement]?> { get }
+    var errorMessage: Observable<String?> { get }
+    var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> { get }
+    var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> { get }
     var selectdCategory: Category { get set }
     func updateFilterType(category :Category)
     func getAllFruits()
@@ -27,17 +25,17 @@ protocol HomeViewModelProtocol: AnyObject {
     func getFruitOrderName(forIndex index: Int, section: Int) -> String?
 }
 
-class HomeViewModel: ObservableObject, HomeViewModelProtocol {
+final class HomeViewModel: HomeViewModelProtocol {
     
-    internal var useCase: HomeUseCase
-    internal var navigator: HomeViewNavigatorProtocol
+     private let useCase: HomeUseCase
+     private let navigator: HomeViewNavigatorProtocol
     
-    internal var allFruitResponse: Observable<[FruitsListModelElement]?> = Observable(nil)
-    internal var errorMessage: Observable<String?> = Observable(nil)
-    internal var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
-    internal var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
+     var allFruitResponse: Observable<[FruitsListModelElement]?> = Observable(nil)
+     var errorMessage: Observable<String?> = Observable(nil)
+     var filteredResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
+     var searchResponse: Observable<Array<(String, Array<FruitsListModelElement>)>?> = Observable(nil)
 
-    internal var selectdCategory = Category.AllFruits
+     var selectdCategory = Category.AllFruits
     
     init(navigator: HomeViewNavigatorProtocol, useCase: HomeUseCase) {
         self.navigator = navigator

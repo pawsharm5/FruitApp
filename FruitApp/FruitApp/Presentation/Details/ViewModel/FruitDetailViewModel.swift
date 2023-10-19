@@ -7,22 +7,20 @@
 
 import Foundation
 
-protocol FruitDetailViewModelProtocol: AnyObject {
-    var useCase: DetailUseCase { get set }
-    var navigator: FruitDetailsNavigatorProtocol { get set }
-    var fruitId: String { get set }
-    var allFruitResponse: Observable<FruitsListModelElement?> {get set}
-    var errorMessage: Observable<String?> {get set}
+protocol FruitDetailViewModelProtocol {
+    var fruitId: String { get }
+    var allFruitResponse: Observable<FruitsListModelElement?> { get }
+    var errorMessage: Observable<String?>  { get }
     func getFruitDetails()
     func getFruitData() -> FruitsListModelElement?
 }
 
-class FruitDetailViewModel: ObservableObject,FruitDetailViewModelProtocol {
-    internal var useCase: DetailUseCase
-    internal var navigator: FruitDetailsNavigatorProtocol
-    internal var fruitId: String
-    internal var allFruitResponse: Observable<FruitsListModelElement?> = Observable(nil)
-    internal var errorMessage: Observable<String?> = Observable(nil)
+final class FruitDetailViewModel: FruitDetailViewModelProtocol {
+    private let useCase: DetailUseCase
+    private let navigator: FruitDetailsNavigatorProtocol
+    var fruitId: String
+    var allFruitResponse: Observable<FruitsListModelElement?> = Observable(nil)
+    var errorMessage: Observable<String?> = Observable(nil)
     
     init(navigator: FruitDetailsNavigatorProtocol, useCase: DetailUseCase, fruitId: String) {
         self.useCase = useCase

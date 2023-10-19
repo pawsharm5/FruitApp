@@ -8,16 +8,16 @@
 import Foundation
 // MARK: - FruitListDataModel
 struct FruitsListModelElement: BaseDataModel {
-    var name: String?
-    var id: Int?
-    var family, order, genus: String?
-    var nutritions: Nutritions?
+    let name: String?
+    let id: Int?
+    let family, order, genus: String?
+    let nutritions: Nutritions?
 }
 
 // MARK: - Nutritions
 struct Nutritions: Codable {
-    var calories: Int?
-    var fat, sugar, carbohydrates, protein: Double?
+    let calories: Int?
+    let fat, sugar, carbohydrates, protein: Double?
 }
 
 typealias FruitListDataModel = [FruitsListModelElement]
