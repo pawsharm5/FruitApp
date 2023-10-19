@@ -24,9 +24,5 @@ final class CardView: UIView {
         layer.shadowOpacity = 0.5
         layer.shadowPath = shadowPath.cgPath
     }
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
 
 }

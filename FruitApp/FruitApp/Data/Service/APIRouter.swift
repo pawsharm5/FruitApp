@@ -46,7 +46,7 @@ final class APIRouter<EndPoint: EndPointType> {
         urlRequest.httpMethod = route.httpMethod.rawValue
         urlRequest.httpBody = route.data
         
-        var headers = route.headers ?? []
+        let headers = route.headers ?? []
         
         headers.forEach { urlRequest.addValue($0.header.value, forHTTPHeaderField: $0.header.field) }
 

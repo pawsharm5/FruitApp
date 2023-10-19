@@ -8,7 +8,7 @@
 import Foundation
 
 final class Services: ServiceInterface {
-    internal var apiManager: APIManagerProtocol
+    var apiManager: APIManagerProtocol
     
     init(apiManager: APIManagerProtocol) {
         self.apiManager = apiManager

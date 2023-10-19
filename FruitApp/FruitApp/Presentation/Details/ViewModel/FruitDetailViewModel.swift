@@ -8,7 +8,6 @@
 import Foundation
 
 protocol FruitDetailViewModelProtocol {
-    var fruitId: String { get }
     var allFruitResponse: Observable<FruitsListModelElement?> { get }
     var errorMessage: Observable<String?>  { get }
     func getFruitDetails()
@@ -18,7 +17,7 @@ protocol FruitDetailViewModelProtocol {
 final class FruitDetailViewModel: FruitDetailViewModelProtocol {
     private let useCase: DetailUseCase
     private let navigator: FruitDetailsNavigatorProtocol
-    var fruitId: String
+    private let fruitId: String
     var allFruitResponse: Observable<FruitsListModelElement?> = Observable(nil)
     var errorMessage: Observable<String?> = Observable(nil)
     

@@ -8,8 +8,8 @@
 import Foundation
 final class Repository: RepositoryInferface {
     
-    internal let service: ServiceInterface
-    internal var mapper: BaseMappper
+    let service: ServiceInterface
+    var mapper: BaseMappper
     
     
     init(service: ServiceInterface, mapper: BaseMappper) {
