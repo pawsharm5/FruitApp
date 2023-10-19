@@ -8,8 +8,8 @@
 import XCTest
 @testable import FruitApp
 
-class Coordinator_Tests: XCTestCase {
-    func test_When_App_Start() {
+class CoordinatorTests: XCTestCase {
+    func testWhenAppStart() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let dependacies = DependenciesAllocator.allocate()
         let navigationController: AppNavigationControllerProtocol = AppNavigationController()
