@@ -16,12 +16,37 @@ final class SSLPinningDelegateManager: NSObject, URLSessionDelegate {
     //MARK :- UrlSession Delegate.
     
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        if challenge.protectionSpace.serverTrust == nil {
-            completionHandler(.useCredential, nil)
-        } else {
-            let trust: SecTrust = challenge.protectionSpace.serverTrust!
-            let credential = URLCredential(trust: trust)
-            completionHandler(.useCredential, credential)
+        guard let serverTrust = challenge.protectionSpace.serverTrust else {
+                     completionHandler(.cancelAuthenticationChallenge, nil);
+                     return
+                 }
+
+                 let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0)
+
+                 // SSL Policies for domain name check
+                 let policy = NSMutableArray()
+                 policy.add(SecPolicyCreateSSL(true, challenge.protectionSpace.host as CFString))
+
+                 //evaluate server certifiacte
+                 let isServerTrusted = SecTrustEvaluateWithError(serverTrust, nil)
+
+                 //Local and Remote certificate Data
+                 let remoteCertificateData:NSData =  SecCertificateCopyData(certificate!)
+
+                 let pathToCertificate = Bundle.main.path(forResource: "analytics.fruityvice.com", ofType: "cer")
+                 let localCertificateData:NSData = NSData(contentsOfFile: pathToCertificate!)!
+                 //Compare certificates
+                 if(isServerTrusted && remoteCertificateData.isEqual(to: localCertificateData as Data)){
+                     let _:URLCredential =  URLCredential(trust:serverTrust)
+                     print("Certificate pinning is successfully completed")
+                     completionHandler(.useCredential,nil)
+                 }
+        else {
+            DispatchQueue.main.async {
+                //self.showAlert(text: "SSL Pinning", message: "Pinning failed")
+            }
+            print("Certificate pinning is failed")
+            completionHandler(.cancelAuthenticationChallenge,nil)
         }
         
     }

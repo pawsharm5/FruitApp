@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		100A8AD82A93A7F7008CAD78 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A8AD72A93A7F7008CAD78 /* Coordinator.swift */; };
+		100F1F182AEFC5E1005ACA7C /* analytics.fruityvice.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 100F1F172AEFC5E1005ACA7C /* analytics.fruityvice.com.cer */; };
+		1098D94C2AF0CDBD003BC19F /* pokeapi.cer in Resources */ = {isa = PBXBuildFile; fileRef = 1098D94B2AF0CDBD003BC19F /* pokeapi.cer */; };
 		10D54D3E2A8E1BAC00E8B328 /* HomeViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D54D3D2A8E1BAC00E8B328 /* HomeViewUITest.swift */; };
 		F22EDCDE2A95EF4D009C6EE5 /* SSLPinningDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22EDCDD2A95EF4D009C6EE5 /* SSLPinningDelegateManager.swift */; };
 		F24C1AEF2A85EBEA00EC512A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C1AEE2A85EBEA00EC512A /* AppDelegate.swift */; };
@@ -86,6 +88,8 @@
 
 /* Begin PBXFileReference section */
 		100A8AD72A93A7F7008CAD78 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		100F1F172AEFC5E1005ACA7C /* analytics.fruityvice.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = analytics.fruityvice.com.cer; sourceTree = "<group>"; };
+		1098D94B2AF0CDBD003BC19F /* pokeapi.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokeapi.cer; sourceTree = "<group>"; };
 		10D54D3D2A8E1BAC00E8B328 /* HomeViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewUITest.swift; sourceTree = "<group>"; };
 		F22EDCDD2A95EF4D009C6EE5 /* SSLPinningDelegateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLPinningDelegateManager.swift; sourceTree = "<group>"; };
 		F24C1AEB2A85EBEA00EC512A /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +212,8 @@
 		F24C1AED2A85EBEA00EC512A /* FruitApp */ = {
 			isa = PBXGroup;
 			children = (
+				100F1F172AEFC5E1005ACA7C /* analytics.fruityvice.com.cer */,
+				1098D94B2AF0CDBD003BC19F /* pokeapi.cer */,
 				F27039B32A94FD19003D92EA /* Fonts */,
 				F27039AF2A94FCE4003D92EA /* Core */,
 				F27039B02A94FCE9003D92EA /* Data */,
@@ -572,6 +578,7 @@
 			files = (
 				F27039C92A94FD19003D92EA /* Roboto-Bold.ttf in Resources */,
 				F27039C02A94FD19003D92EA /* Roboto-Medium.ttf in Resources */,
+				1098D94C2AF0CDBD003BC19F /* pokeapi.cer in Resources */,
 				F27039C72A94FD19003D92EA /* Roboto-Italic.ttf in Resources */,
 				F27039C62A94FD19003D92EA /* Roboto-LightItalic.ttf in Resources */,
 				F27039C22A94FD19003D92EA /* Roboto-Regular.ttf in Resources */,
@@ -583,6 +590,7 @@
 				F24C1B252A85ECA600EC512A /* FruitListTblCell.xib in Resources */,
 				F27039CB2A94FD19003D92EA /* Roboto-Black.ttf in Resources */,
 				F27039C42A94FD19003D92EA /* Roboto-ThinItalic.ttf in Resources */,
+				100F1F182AEFC5E1005ACA7C /* analytics.fruityvice.com.cer in Resources */,
 				F24C1AF82A85EBEB00EC512A /* Assets.xcassets in Resources */,
 				F27039C52A94FD19003D92EA /* Roboto-BoldItalic.ttf in Resources */,
 				F24C1AF62A85EBEA00EC512A /* Main.storyboard in Resources */,
